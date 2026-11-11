@@ -1,0 +1,12 @@
+provider: riot-games
+apis_io: https://apis.io/providers/riot-games/
+context: sports
+generated: '2026-11-11'
+concepts:
+  game:
+    path_segment:
+    - matches
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/riot-games-league-of-legends-openapi.yml#GET /lol/match/v5/matches/{matchId}

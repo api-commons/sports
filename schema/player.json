@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/sports/main/schema/player.json",
+  "title": "Player",
+  "description": "The common player in Sports Data, distilled from 17 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.941,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "id",
+        "playerId",
+        "player_id",
+        "sport_id",
+        "@id",
+        "sportId",
+        "PlayerID"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.824,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "name",
+        "full_name",
+        "display_name",
+        "title",
+        "displayName",
+        "Name"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "first_name",
+        "firstname",
+        "FirstName",
+        "firstName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "last_name",
+        "lastname",
+        "LastName",
+        "lastName"
+      ]
+    },
+    "position": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "position",
+        "Position"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.412,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "status",
+        "Status",
+        "state"
+      ]
+    },
+    "birth_date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "date_of_birth",
+        "dob",
+        "BirthDate",
+        "dateOfBirth",
+        "birthDate"
+      ]
+    },
+    "jersey_number": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "number",
+        "jerseyNumber",
+        "Jersey",
+        "Number",
+        "shirtNumber",
+        "jersey"
+      ]
+    },
+    "weight": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "weight",
+        "Weight"
+      ]
+    },
+    "height": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "height",
+        "Height"
+      ]
+    },
+    "team_id": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "teamId",
+        "team_id",
+        "TeamID"
+      ]
+    },
+    "age": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "age",
+        "Age"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "country"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "sports",
+    "concept": "player",
+    "providers": 17,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

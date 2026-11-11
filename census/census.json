@@ -1,0 +1,3925 @@
+{
+ "cohort_size": 64,
+ "unreadable": [],
+ "concepts": {
+  "league": {
+   "5dollarfootballapi": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "success": "integer",
+     "data": null,
+     "pagination": "object"
+    },
+    "evidence": [
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues",
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues/{id}"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "tournaments",
+     "tournament"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/tournaments",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /tournament/{url-ID}"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "tournaments",
+     "competitions",
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "total_pages": "integer",
+     "has_next": "boolean",
+     "has_prev": "boolean",
+     "id": "string",
+     "name": "string",
+     "tour": "string",
+     "level": "string",
+     "category": null,
+     "tier": null,
+     "surface": "string",
+     "draw_size": null,
+     "city": null,
+     "country_code": null,
+     "first_edition_year": null,
+     "most_recent_edition_year": null,
+     "all_time_title_leader": null,
+     "year": null,
+     "is_live_shell": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/tournaments/{id}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/leagues",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/tournaments/{eventIdOrSlug}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /dota2/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/tournaments/{id}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/competitions",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/tournaments",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/tournaments/{tournament_id}"
+    ]
+   },
+   "entitysport": {
+    "segments": [
+     "competitions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/entitysport-openapi.yml#GET /competitions",
+     "openapi/_original/entitysport-openapi.yml#GET /competitions/{cid}"
+    ]
+   },
+   "genius-sports": {
+    "segments": [
+     "competitions",
+     "leagues"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "pageSize": "integer",
+     "totalItems": "integer",
+     "items": "array",
+     "self": "string",
+     "previous": "string",
+     "next": "string",
+     "first": "string",
+     "last": "string",
+     "id": "integer",
+     "createdOn": "string",
+     "modifiedOn": "string",
+     "updatesCount": "integer",
+     "metadataProperties": "array",
+     "externalIds": "object",
+     "sport": "object",
+     "organization": "object",
+     "name": "string",
+     "locality": "object",
+     "timezone": "object",
+     "genderType": "string",
+     "ageCategory": "string",
+     "tier": "string",
+     "shortName": "string",
+     "longName": "string",
+     "sponsorName": "string",
+     "youth": "boolean",
+     "isProtected": "boolean",
+     "sportId": "integer",
+     "organizationId": "integer",
+     "localityId": "integer",
+     "sourceEntityId": "string",
+     "sourceMetadata": "object",
+     "startDate": "string",
+     "endDate": "string",
+     "meta": "object",
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /competitions/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitions",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitions/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /competitions",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitions",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /ingestion/competitions",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /competitions",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/competitions",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/competitions/{competitionId}",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/leagues",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/leagues/{leagueId}"
+    ]
+   },
+   "highlightly": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "logo": "string",
+     "season": "integer",
+     "country": "object"
+    },
+    "evidence": [
+     "openapi/_original/highlightly-openapi.yml#GET /football/leagues",
+     "openapi/_original/highlightly-openapi.yml#GET /football/leagues/{id}"
+    ]
+   },
+   "lucra-sports": {
+    "segments": [
+     "tournaments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "description": "object",
+     "status": "string",
+     "type": "string",
+     "visibility": "string",
+     "gameId": "object",
+     "imageUrl": "object",
+     "buyIn": "string",
+     "feePercent": "string",
+     "maxParticipants": "object",
+     "maxAttempts": "object",
+     "privateCode": "object",
+     "metadata": "object",
+     "startsAt": "object",
+     "expiresAt": "object",
+     "signUpStart": "object",
+     "signUpEnd": "object",
+     "createdAt": "object",
+     "participantsCount": "number",
+     "buyInAmount": "number",
+     "visibilityLevel": "string",
+     "locationIds": "array",
+     "scoringType": "string",
+     "minPayoutAmount": "object",
+     "fee": "number",
+     "omitAttemptCompletedCheck": "boolean",
+     "overrideImageUrl": "string",
+     "identifier": null
+    },
+    "evidence": [
+     "openapi/_original/lucra-sports-forge-openapi.json#GET /api/tournaments",
+     "openapi/_original/lucra-sports-forge-openapi.json#GET /api/tournaments/{id}",
+     "openapi/_original/lucra-sports-forge-openapi.json#PATCH /api/tournaments",
+     "openapi/_original/lucra-sports-forge-openapi.json#PATCH /api/tournaments/{id}",
+     "openapi/_original/lucra-sports-forge-openapi.json#POST /api/tournaments"
+    ]
+   },
+   "major-league-baseball": {
+    "segments": [
+     "league",
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "copyright": "string",
+     "id": "integer",
+     "name": "string",
+     "link": "string",
+     "abbreviation": "string",
+     "nameShort": "string",
+     "seasonState": "string",
+     "hasWildCard": "boolean",
+     "hasSplitSeason": "boolean",
+     "numGames": "integer",
+     "hasPlayoffPoints": "boolean",
+     "numTeams": "integer",
+     "numWildcardTeams": "integer",
+     "seasonDateInfo": "object",
+     "season": "string",
+     "orgCode": "string",
+     "conferencesInUse": "boolean",
+     "divisionsInUse": "boolean",
+     "sport": "object",
+     "timeZone": "object",
+     "sortOrder": "integer",
+     "active": "boolean",
+     "isAffiliated": "boolean",
+     "ruleSettings": "array"
+    },
+    "evidence": [
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/league",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/league/{leagueId}",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/leagues",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/leagues/{leagueId}",
+     "openapi/_original/major-league-baseball-openapi.json#POST /api/v1/league",
+     "openapi/_original/major-league-baseball-openapi.json#POST /api/v1/leagues"
+    ]
+   },
+   "odds-api": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "items": "array"
+    },
+    "evidence": [
+     "openapi/_original/odds-api-openapi.json#GET /leagues"
+    ]
+   },
+   "oddsjam": {
+    "segments": [
+     "leagues",
+     "tournaments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/oddsjam-openapi.yml#GET /leagues",
+     "openapi/_original/oddsjam-openapi.yml#GET /tournaments"
+    ]
+   },
+   "opticodds": {
+    "segments": [
+     "leagues",
+     "tournaments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "gender": "string",
+     "id": "string",
+     "name": "string",
+     "numerical_id": "integer",
+     "region": "string",
+     "region_code": "string",
+     "sport": "object",
+     "end_date": "string",
+     "format": "string",
+     "is_active": "boolean",
+     "is_live": "boolean",
+     "league": "object",
+     "season_year": "string",
+     "start_date": "string",
+     "status": "string",
+     "tee_times": null,
+     "venue_location": "string",
+     "venue_name": "string",
+     "data": "array"
+    },
+    "evidence": [
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /leagues",
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /tournaments",
+     "openapi/_original/opticodds-openapi.yml#GET /leagues"
+    ]
+   },
+   "pandascore": {
+    "segments": [
+     "leagues",
+     "tournaments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pandascore-openapi.yml#GET /leagues",
+     "openapi/_original/pandascore-openapi.yml#GET /leagues/{leagueIdOrSlug}",
+     "openapi/_original/pandascore-openapi.yml#GET /tournaments",
+     "openapi/_original/pandascore-openapi.yml#GET /tournaments/{tournamentIdOrSlug}"
+    ]
+   },
+   "sharpapi": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": null,
+     "updated_at": "string",
+     "id": "string",
+     "name": "string",
+     "sport": "string",
+     "event_count": "integer",
+     "live_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sharpapi-openapi.json#GET /leagues"
+    ]
+   },
+   "skipodds": {
+    "segments": [
+     "tournaments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/skipodds-openapi.json#GET /v1/golf/tournaments",
+     "openapi/_original/skipodds-openapi.json#GET /v1/golf/tournaments/{key}",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/golf/tournaments",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/golf/tournaments/{key}"
+    ]
+   },
+   "sponsorunited": {
+    "segments": [
+     "league",
+     "leagues"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "short_name": "string",
+     "currency": "string",
+     "logo_url": "string",
+     "website_url": "string",
+     "sport_id": "integer",
+     "owner_id": "integer",
+     "scouting_priority": "integer",
+     "platforms_scouted": "integer",
+     "times_scouted_per_year": "integer",
+     "genre_id": "integer",
+     "subgenre_id": "integer",
+     "release_date": "string",
+     "start_date": "string",
+     "end_date": "string",
+     "social_start_date": "string",
+     "social_end_date": "string",
+     "notes": "string",
+     "assistants": "array",
+     "is_continuous": "boolean",
+     "separator_text": "string",
+     "divisions": "array",
+     "rejected_companies": "array",
+     "order": "integer",
+     "status": "string",
+     "item_id": "integer",
+     "is_key_asset": "integer",
+     "spendTrackerLeagues": "array",
+     "id": "integer",
+     "statsSport": "string",
+     "statsSportId": "integer",
+     "statsLeagueAbbreviation": "string",
+     "statsLeagueName": "string",
+     "statsTeamId": "string",
+     "statsTeamName": "string",
+     "suTeamId": "integer",
+     "suTeamName": "string",
+     "statsApi": "string",
+     "sport": "string",
+     "api": "string"
+    },
+    "evidence": [
+     "openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/league/{league}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league-items/league",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league/{league}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/spend-tracker/dollar-off-metrics/league",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/spend-tracker/leagues",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/stats/mappings/leagues",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/track/organization/{organization_id}/stats/league",
+     "openapi/_original/sponsorunited-api-openapi-original.json#POST /api/league",
+     "openapi/_original/sponsorunited-api-openapi-original.json#PUT /api/league/{league}"
+    ]
+   },
+   "sportmonks": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "sport_id": "integer",
+     "country_id": "integer",
+     "name": "string",
+     "active": "boolean",
+     "short_code": "string",
+     "image_path": "string",
+     "type": "string",
+     "sub_type": "string",
+     "last_played_at": "string",
+     "category": "integer",
+     "has_jerseys": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/sportmonks-football-openapi.yml#GET /leagues",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /leagues/{id}"
+    ]
+   },
+   "sportsdataio": {
+    "segments": [
+     "competitions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "CompetitionId": "integer",
+     "AreaId": "integer",
+     "AreaName": [
+      "string",
+      "null"
+     ],
+     "Name": [
+      "string",
+      "null"
+     ],
+     "Gender": [
+      "string",
+      "null"
+     ],
+     "Type": [
+      "string",
+      "null"
+     ],
+     "Format": [
+      "string",
+      "null"
+     ],
+     "Seasons": "array",
+     "Key": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/sportsdataio-soccer-openapi.yml#GET /v4/soccer/scores/{format}/Competitions"
+    ]
+   },
+   "sportsgameodds": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "leagueId": "string",
+     "name": "string",
+     "sport": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/sportsgameodds-openapi.yml#GET /leagues/"
+    ]
+   },
+   "statorium": {
+    "segments": [
+     "leagues"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "country": "string",
+     "logoUrl": "string",
+     "currentSeasonId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/leagues/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /leagues/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /leagues/{leagueId}/"
+    ]
+   },
+   "toornament": {
+    "segments": [
+     "tournaments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "discipline": "string",
+     "name": "string",
+     "full_name": "string",
+     "status": "string",
+     "participant_type": "string",
+     "size": "integer",
+     "online": "boolean",
+     "country": "string",
+     "timezone": "string",
+     "scheduled_date_start": "string",
+     "scheduled_date_end": "string",
+     "registration_enabled": "boolean",
+     "registration_opening_datetime": "string",
+     "registration_closing_datetime": "string",
+     "platforms": "array",
+     "website": "string",
+     "discord": "string",
+     "description": "string",
+     "rules": "string",
+     "prize": "string",
+     "contact": "string",
+     "public": "boolean",
+     "archived": "boolean",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/toornament-openapi.yml#DELETE /tournaments/{id}",
+     "openapi/_original/toornament-openapi.yml#GET /tournaments",
+     "openapi/_original/toornament-openapi.yml#GET /tournaments/{id}",
+     "openapi/_original/toornament-openapi.yml#PATCH /tournaments/{id}",
+     "openapi/_original/toornament-openapi.yml#POST /tournaments"
+    ]
+   },
+   "videoverse": {
+    "segments": [
+     "tournament"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "players": "array",
+     "metadata": "object",
+     "teamId": "string",
+     "category": "string",
+     "tournamentName": "string",
+     "teams": "array",
+     "metaData": "object"
+    },
+    "evidence": [
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/tournament",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/tournament/{tournamentId}",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/tournament",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/tournament/{tournamentId}"
+    ]
+   }
+  },
+  "team": {
+   "5dollarfootballapi": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "success": "integer",
+     "data": null,
+     "pagination": "object"
+    },
+    "evidence": [
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /teams/{id}"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "clubs",
+     "club"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "@id": "string",
+     "name": "string",
+     "club_id": "integer",
+     "country": "string",
+     "average_daily_rating": "integer",
+     "members_count": "integer",
+     "created": "integer",
+     "last_activity": "integer",
+     "admin": "array",
+     "visibility": "string",
+     "join_request": "string",
+     "description": "string",
+     "clubs": "array"
+    },
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /club/{url-ID}",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/clubs",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/clubs"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/events/{eventIdOrSlug}/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/rankings/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/stats/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams/{teamIdOrSlug}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/tournaments/{eventIdOrSlug}/teams",
+     "openapi/_original/citoapi-v1-openapi.json#GET /dota2/teams"
+    ]
+   },
+   "crob-at": {
+    "segments": [
+     "team"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "slug": "string",
+     "name": [
+      "string",
+      "null"
+     ],
+     "author": [
+      "string",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "public": "boolean",
+     "image": "string",
+     "source_url": [
+      "string",
+      "null"
+     ],
+     "created_at": "string",
+     "views": "integer",
+     "is_multi": "boolean",
+     "teams": "array",
+     "url": "string",
+     "management_token": "string",
+     "format": "string",
+     "paste": "string"
+    },
+    "evidence": [
+     "openapi/_original/crob-at-openapi.json#GET /api/team/{slug}",
+     "openapi/_original/crob-at-openapi.json#POST /api/team"
+    ]
+   },
+   "dream-sports": {
+    "segments": [
+     "squads"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "squadId": "integer",
+     "squadName": "string",
+     "projectId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/dream-sports-checkmate-openapi.yml#GET /api/v1/project/squads"
+    ]
+   },
+   "entitysport": {
+    "segments": [
+     "squads",
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/entitysport-openapi.yml#GET /matches/{mid}/squads",
+     "openapi/_original/entitysport-openapi.yml#GET /teams/{tid}"
+    ]
+   },
+   "genius-sports": {
+    "segments": [
+     "teams",
+     "squads"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "pageSize": "integer",
+     "totalItems": "integer",
+     "items": "array",
+     "self": "string",
+     "previous": "string",
+     "next": "string",
+     "first": "string",
+     "last": "string",
+     "id": "integer",
+     "createdOn": "string",
+     "modifiedOn": "string",
+     "updatesCount": "integer",
+     "metadataProperties": "array",
+     "externalIds": "object",
+     "name": "string",
+     "abbreviation": "string",
+     "sport": "object",
+     "genderType": "string",
+     "ageCategory": "string",
+     "locality": "object",
+     "competitorStatusType": "string",
+     "venue": "object",
+     "isProtected": "boolean",
+     "localityId": "integer",
+     "venueId": "integer",
+     "sportId": "integer",
+     "organization": null,
+     "team": null,
+     "players": "array",
+     "officials": "array",
+     "skipContractDeactivation": "boolean",
+     "meta": "object",
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/teams",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/teams/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitors/teams",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /ingestion/squads",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /competitors/teams",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/teams",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/teams/{teamId}"
+    ]
+   },
+   "goalserve": {
+    "segments": [
+     "team"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/goalserve-openapi.yml#GET /{key}/soccerstats/team/{team_id}"
+    ]
+   },
+   "gracenote": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/gracenote-onconnect-lookup-apis-openapi.json#GET /v1.1/sports/teams/{teamBrandId}"
+    ]
+   },
+   "highlightly": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "logo": "string"
+    },
+    "evidence": [
+     "openapi/_original/highlightly-openapi.yml#GET /football/teams",
+     "openapi/_original/highlightly-openapi.yml#GET /football/teams/{id}"
+    ]
+   },
+   "major-league-baseball": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "copyright": "string",
+     "hydrations": "array",
+     "springLeague": "object",
+     "xrefIds": "array",
+     "allStarStatus": "string",
+     "id": "integer",
+     "name": "string",
+     "link": "string",
+     "season": "integer",
+     "venue": "object",
+     "springVenue": "object",
+     "teamCode": "string",
+     "fileCode": "string",
+     "abbreviation": "string",
+     "triCode": "string",
+     "teamName": "string",
+     "locationName": "string",
+     "firstYearOfPlay": "string",
+     "league": "object",
+     "division": "object",
+     "sport": "object",
+     "conference": "object",
+     "franchise": "object",
+     "teamStats": "array",
+     "roster": "object",
+     "teamLeaders": "array",
+     "nextGameSchedule": "object",
+     "previousGameSchedule": "object",
+     "nextSchedule": "object",
+     "previousSchedule": "object",
+     "content": "object",
+     "deviceProperties": "object",
+     "social": "object",
+     "shortName": "string",
+     "record": "object",
+     "playoffInfo": "object",
+     "homeAway": "string",
+     "teamDesignation": "string",
+     "parentOrgName": "string",
+     "parentOrgId": "integer",
+     "franchiseName": "string",
+     "clubName": "string",
+     "location": "object",
+     "active": "boolean",
+     "placeholder": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/teams",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/teams/{teamId}"
+    ]
+   },
+   "oddsjam": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/oddsjam-openapi.yml#GET /teams"
+    ]
+   },
+   "opticodds": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "abbreviation": "string",
+     "base_id": "integer",
+     "city": "string",
+     "conference": "string",
+     "division": "string",
+     "id": "string",
+     "is_active": "boolean",
+     "league": "object",
+     "logo": "string",
+     "mascot": "string",
+     "name": "string",
+     "nickname": "string",
+     "numerical_id": "integer",
+     "source_ids": "object",
+     "sport": "object"
+    },
+    "evidence": [
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /teams"
+    ]
+   },
+   "pandascore": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pandascore-openapi.yml#GET /teams"
+    ]
+   },
+   "polar": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "organisation": "string",
+     "created": "string",
+     "modified": "string",
+     "players": "array",
+     "sport_profiles": "array"
+    },
+    "evidence": [
+     "openapi/_original/polar-teampro-api-openapi.yml#GET /v1/teams",
+     "openapi/_original/polar-teampro-api-openapi.yml#GET /v1/teams/{team_id}"
+    ]
+   },
+   "runsignup": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "team_id": "integer",
+     "name": "string",
+     "member_count": "integer",
+     "event_id": "integer",
+     "captain_user_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/runsignup-openapi.yml#GET /race/{race_id}/teams",
+     "openapi/_original/runsignup-openapi.yml#POST /race/{race_id}/teams"
+    ]
+   },
+   "sharpapi": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": null,
+     "updated_at": "string",
+     "id": "string",
+     "name": "string",
+     "sport": "string",
+     "leagues": "array",
+     "aliases": "array",
+     "event_count": "integer",
+     "live_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sharpapi-openapi.json#GET /teams"
+    ]
+   },
+   "sponsorunited": {
+    "segments": [
+     "team"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "parent_id": "integer",
+     "type_id": "integer",
+     "uuid": "integer",
+     "division_id": "integer",
+     "sport_id": "integer",
+     "name": "string",
+     "synopsis": "string",
+     "alias": "string",
+     "logo": "string",
+     "cover": "string",
+     "is_continuous": "integer",
+     "league_level_property": "integer",
+     "no_of_employees": "integer",
+     "email": "string",
+     "website_url": "string",
+     "linkedin_url": "string",
+     "linkedin_id_url": "string",
+     "facebook_url": "string",
+     "twitter_url": "string",
+     "instagram_url": "string",
+     "twitch_url": "string",
+     "tiktok_url": "string",
+     "youtube_url": "string",
+     "exclude_from_social_scan": "integer",
+     "inactive": "integer",
+     "market": "string",
+     "state": "string",
+     "city": "string",
+     "geolocation": "string",
+     "corporate_phone": "string",
+     "linkedin_employees": "string",
+     "targeted_prospects_feed_url": "string",
+     "top_sponsorship_headlines_feed_url": "string",
+     "headlines_feed_url": "string",
+     "capacity": "string",
+     "venue_uuid": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "deleted_at": "string",
+     "league_id": "integer",
+     "markets": "array",
+     "organizations": "array",
+     "agencies": "array",
+     "hashtags": "array",
+     "rejected_brands": "array",
+     "locations": "array",
+     "twitter_handle": "string",
+     "facebook_handle": "string",
+     "instagram_handle": "string",
+     "tiktok_handle": "string",
+     "youtube_handle": "string",
+     "twitch_handle": "string",
+     "league": "object",
+     "main_markets": "array",
+     "parent": "object",
+     "children": "array",
+     "sport": "object",
+     "genere": "object",
+     "twitter_extra_handles": "array",
+     "facebook_extra_handles": "array",
+     "instagram_extra_handles": "array",
+     "tiktok_extra_handles": "array",
+     "twitch_extra_handles": "array",
+     "youtube_extra_handles": "array",
+     "birthplace": "array",
+     "current_city": "array",
+     "key_location": "array",
+     "college": "array",
+     "genre_id": "integer",
+     "subgenre_id": "integer",
+     "league_seasons_scope": "string",
+     "property_attendances": "array",
+     "primary_profile": "object",
+     "secondary_profiles": "array",
+     "error": "string",
+     "status": "integer",
+     "type": "integer",
+     "due_date": "string",
+     "attended_date": "string",
+     "initial_note": "string",
+     "new_user_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/team/{id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/user/{user_id}/event/{event_id}/team/{team_id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/events/team/{team_id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/team",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/team/{id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#GET /api/user/{user_id}/event/{event_id}/team/{team_id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#POST /api/team",
+     "openapi/_original/sponsorunited-api-openapi-original.json#POST /api/user/{user_id}/event/{event_id}/team/{team_id}",
+     "openapi/_original/sponsorunited-api-openapi-original.json#PUT /api/team/{id}"
+    ]
+   },
+   "sportmonks": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "sport_id": "integer",
+     "country_id": "integer",
+     "venue_id": "integer",
+     "gender": "string",
+     "name": "string",
+     "short_code": "string",
+     "image_path": "string",
+     "founded": "integer",
+     "type": "string",
+     "placeholder": "boolean",
+     "last_played_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sportmonks-football-openapi.yml#GET /teams",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /teams/{id}"
+    ]
+   },
+   "sportsdataio": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "TeamID": "integer",
+     "Key": [
+      "string",
+      "null"
+     ],
+     "Active": "boolean",
+     "City": [
+      "string",
+      "null"
+     ],
+     "Name": [
+      "string",
+      "null"
+     ],
+     "StadiumID": [
+      "integer",
+      "null"
+     ],
+     "League": [
+      "string",
+      "null"
+     ],
+     "Division": [
+      "string",
+      "null"
+     ],
+     "PrimaryColor": [
+      "string",
+      "null"
+     ],
+     "SecondaryColor": [
+      "string",
+      "null"
+     ],
+     "TertiaryColor": [
+      "string",
+      "null"
+     ],
+     "QuaternaryColor": [
+      "string",
+      "null"
+     ],
+     "WikipediaLogoUrl": [
+      "string",
+      "null"
+     ],
+     "WikipediaWordMarkUrl": [
+      "string",
+      "null"
+     ],
+     "GlobalTeamID": "integer",
+     "HeadCoach": [
+      "string",
+      "null"
+     ],
+     "HittingCoach": [
+      "string",
+      "null"
+     ],
+     "PitchingCoach": [
+      "string",
+      "null"
+     ],
+     "LeagueID": [
+      "integer",
+      "null"
+     ],
+     "Conference": [
+      "string",
+      "null"
+     ],
+     "NbaDotComTeamID": [
+      "integer",
+      "null"
+     ],
+     "PlayerID": "integer",
+     "FullName": [
+      "string",
+      "null"
+     ],
+     "ByeWeek": [
+      "integer",
+      "null"
+     ],
+     "AverageDraftPosition": [
+      "number",
+      "null"
+     ],
+     "AverageDraftPositionPPR": [
+      "number",
+      "null"
+     ],
+     "OffensiveCoordinator": [
+      "string",
+      "null"
+     ],
+     "DefensiveCoordinator": [
+      "string",
+      "null"
+     ],
+     "SpecialTeamsCoach": [
+      "string",
+      "null"
+     ],
+     "OffensiveScheme": [
+      "string",
+      "null"
+     ],
+     "DefensiveScheme": [
+      "string",
+      "null"
+     ],
+     "UpcomingSalary": [
+      "integer",
+      "null"
+     ],
+     "UpcomingOpponent": [
+      "string",
+      "null"
+     ],
+     "UpcomingOpponentRank": [
+      "integer",
+      "null"
+     ],
+     "UpcomingOpponentPositionRank": [
+      "integer",
+      "null"
+     ],
+     "UpcomingFanDuelSalary": [
+      "integer",
+      "null"
+     ],
+     "UpcomingDraftKingsSalary": [
+      "integer",
+      "null"
+     ],
+     "UpcomingYahooSalary": [
+      "integer",
+      "null"
+     ],
+     "DraftKingsName": [
+      "string",
+      "null"
+     ],
+     "DraftKingsPlayerID": [
+      "integer",
+      "null"
+     ],
+     "FanDuelName": [
+      "string",
+      "null"
+     ],
+     "FanDuelPlayerID": [
+      "integer",
+      "null"
+     ],
+     "FantasyDraftName": [
+      "string",
+      "null"
+     ],
+     "FantasyDraftPlayerID": [
+      "integer",
+      "null"
+     ],
+     "YahooName": [
+      "string",
+      "null"
+     ],
+     "YahooPlayerID": [
+      "integer",
+      "null"
+     ],
+     "StadiumDetails": "object",
+     "AverageDraftPosition2QB": [
+      "number",
+      "null"
+     ],
+     "AverageDraftPositionDynasty": [
+      "number",
+      "null"
+     ],
+     "TeamId": "integer",
+     "AreaId": [
+      "integer",
+      "null"
+     ],
+     "VenueId": [
+      "integer",
+      "null"
+     ],
+     "AreaName": [
+      "string",
+      "null"
+     ],
+     "VenueName": [
+      "string",
+      "null"
+     ],
+     "Gender": [
+      "string",
+      "null"
+     ],
+     "Type": [
+      "string",
+      "null"
+     ],
+     "Address": [
+      "string",
+      "null"
+     ],
+     "Zip": [
+      "string",
+      "null"
+     ],
+     "Phone": [
+      "string",
+      "null"
+     ],
+     "Fax": [
+      "string",
+      "null"
+     ],
+     "Website": [
+      "string",
+      "null"
+     ],
+     "Email": [
+      "string",
+      "null"
+     ],
+     "Founded": [
+      "integer",
+      "null"
+     ],
+     "ClubColor1": [
+      "string",
+      "null"
+     ],
+     "ClubColor2": [
+      "string",
+      "null"
+     ],
+     "ClubColor3": [
+      "string",
+      "null"
+     ],
+     "Nickname1": [
+      "string",
+      "null"
+     ],
+     "Nickname2": [
+      "string",
+      "null"
+     ],
+     "Nickname3": [
+      "string",
+      "null"
+     ],
+     "GlobalTeamId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/teams",
+     "openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/teams/{season}",
+     "openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/teams",
+     "openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/teams/{season}",
+     "openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Teams",
+     "openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Teams/{season}",
+     "openapi/_original/sportsdataio-nhl-openapi.yml#GET /v3/nhl/scores/{format}/teams",
+     "openapi/_original/sportsdataio-nhl-openapi.yml#GET /v3/nhl/scores/{format}/teams/{season}",
+     "openapi/_original/sportsdataio-soccer-openapi.yml#GET /v4/soccer/scores/{format}/Teams/{competition}"
+    ]
+   },
+   "sportsgameodds": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "teamId": "string",
+     "name": "string",
+     "abbreviation": "string",
+     "league": "string"
+    },
+    "evidence": [
+     "openapi/_original/sportsgameodds-openapi.yml#GET /teams/",
+     "openapi/_original/sportsgameodds-openapi.yml#GET /teams/{teamId}"
+    ]
+   },
+   "statorium": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "city": "string",
+     "abbreviation": "string",
+     "conference": "string",
+     "division": "string",
+     "logoUrl": "string",
+     "stadium": "string",
+     "nameTranslated": "string",
+     "country": "string",
+     "founded": "integer",
+     "players": "array"
+    },
+    "evidence": [
+     "openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/teams/",
+     "openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/teams/{teamId}/",
+     "openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/teams/{teamId}/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /teams/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /teams/{teamId}/"
+    ]
+   },
+   "stats-perform": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "teamId": "string",
+     "name": "string",
+     "abbreviation": "string",
+     "city": "string",
+     "conference": "string",
+     "division": "string",
+     "logoUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/teams/",
+     "openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/teams/{teamId}"
+    ]
+   },
+   "strava": {
+    "segments": [
+     "clubs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "profile_medium": "string",
+     "cover_photo": "string",
+     "sport_type": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "private": "boolean",
+     "member_count": "integer",
+     "featured": "boolean",
+     "verified": "boolean",
+     "url": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/strava-openapi.yml#GET /athlete/clubs",
+     "openapi/_original/strava-openapi.yml#GET /clubs/{id}"
+    ]
+   },
+   "therundown": {
+    "segments": [
+     "teams"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "team_id": "integer",
+     "name": "string",
+     "mascot": "string",
+     "abbreviation": "string",
+     "ranking": "integer",
+     "record": "string",
+     "conference": "object",
+     "division": "object"
+    },
+    "evidence": [
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v1/sports/{sportID}/teams",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/sports/{sportID}/teams",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/teams/{teamID}/"
+    ]
+   },
+   "videoverse": {
+    "segments": [
+     "team"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "metadata": "object",
+     "category": "string",
+     "teamName": "string",
+     "players": "array",
+     "metaData": "object"
+    },
+    "evidence": [
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/team",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/team/{teamId}",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/team",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/team/{teamId}"
+    ]
+   }
+  },
+  "player": {
+   "chess-com": {
+    "segments": [
+     "player",
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "@id": "string",
+     "url": "string",
+     "username": "string",
+     "player_id": "integer",
+     "title": "string",
+     "status": "string",
+     "name": "string",
+     "avatar": "string",
+     "location": "string",
+     "country": "string",
+     "joined": "integer",
+     "last_online": "integer",
+     "followers": "integer",
+     "is_streamer": "boolean",
+     "twitch_url": "string",
+     "fide": "integer",
+     "players": "array"
+    },
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/players",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "players",
+     "athletes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "total_pages": "integer",
+     "has_next": "boolean",
+     "has_prev": "boolean",
+     "id": "string",
+     "tour": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "full_name": "string",
+     "ioc": null,
+     "country_code": null,
+     "portrait_url": null,
+     "portrait_attribution": null,
+     "portrait_license": null,
+     "portrait_source_url": null,
+     "country_name": null,
+     "nationality": null,
+     "hand": null,
+     "backhand": null,
+     "dob": null,
+     "height_cm": null,
+     "weight_kg": null,
+     "turned_pro": null,
+     "career_high_rank": null,
+     "career_high_date": null,
+     "current_rank": null,
+     "titles_count": null,
+     "grand_slam_titles": null,
+     "is_active": "boolean",
+     "age": null,
+     "weeks_at_no_1": null,
+     "current_rank_points": null,
+     "career_summary": "object",
+     "surface_breakdown": null,
+     "slug": "string",
+     "name": "string",
+     "gender": "string",
+     "country": "string",
+     "hometown": "string",
+     "club": "string",
+     "record": "object",
+     "titles": "array"
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/stats/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /dota2/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/players/{identifier}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /raf/athletes",
+     "openapi/_original/citoapi-v1-openapi.json#GET /raf/athletes/{slug}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/players"
+    ]
+   },
+   "cricapi": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/cricapi-cricket-data-api-openapi.yml#GET /players"
+    ]
+   },
+   "entitysport": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/entitysport-openapi.yml#GET /players/{pid}"
+    ]
+   },
+   "genius-sports": {
+    "segments": [
+     "players",
+     "player"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "pageSize": "integer",
+     "totalItems": "integer",
+     "items": "array",
+     "self": "string",
+     "previous": "string",
+     "next": "string",
+     "first": "string",
+     "last": "string",
+     "id": "integer",
+     "createdOn": "string",
+     "modifiedOn": "string",
+     "updatesCount": "integer",
+     "metadataProperties": "array",
+     "externalIds": "object",
+     "name": "string",
+     "sport": "object",
+     "genderType": "string",
+     "locality": "object",
+     "competitorStatusType": "string",
+     "person": "object",
+     "isProtected": "boolean",
+     "personId": "integer",
+     "sportId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /contracts/team/{teamId}/player/{playerId}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/players",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/players/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitors/players",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /competitors/players"
+    ]
+   },
+   "goalserve": {
+    "segments": [
+     "player"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/goalserve-openapi.yml#GET /{key}/soccerstats/player/{player_id}"
+    ]
+   },
+   "highlightly": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "number": "integer",
+     "position": "string"
+    },
+    "evidence": [
+     "openapi/_original/highlightly-openapi.yml#GET /football/players",
+     "openapi/_original/highlightly-openapi.yml#GET /football/players/{id}"
+    ]
+   },
+   "major-league-baseball": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/sports/{sportId}/players"
+    ]
+   },
+   "oddsjam": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/oddsjam-openapi.yml#GET /players"
+    ]
+   },
+   "opticodds": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "age": "integer",
+     "base_id": "integer",
+     "experience": "integer",
+     "first_name": "string",
+     "height": "integer",
+     "id": "string",
+     "is_active": "boolean",
+     "last_name": "string",
+     "league": "object",
+     "logo": "string",
+     "name": "string",
+     "number": "integer",
+     "numerical_id": "integer",
+     "position": "string",
+     "source_ids": "object",
+     "sport": "object",
+     "team": "object",
+     "weight": "integer"
+    },
+    "evidence": [
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /players"
+    ]
+   },
+   "pandascore": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pandascore-openapi.yml#GET /players"
+    ]
+   },
+   "splitgate": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "playerId": "string",
+     "displayName": "string"
+    },
+    "evidence": [
+     "openapi/_original/splitgate-third-party-openapi-original.yml#GET /v1/search/players"
+    ]
+   },
+   "sportmonks": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "sport_id": "integer",
+     "country_id": "integer",
+     "nationality_id": "integer",
+     "city_id": "integer",
+     "position_id": "integer",
+     "detailed_position_id": "integer",
+     "type_id": "integer",
+     "common_name": "string",
+     "firstname": "string",
+     "lastname": "string",
+     "name": "string",
+     "display_name": "string",
+     "image_path": "string",
+     "height": "integer",
+     "weight": "integer",
+     "date_of_birth": "string",
+     "gender": "string"
+    },
+    "evidence": [
+     "openapi/_original/sportmonks-football-openapi.yml#GET /players",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /players/{id}"
+    ]
+   },
+   "sportsdataio": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "PlayerID": "integer",
+     "SportsDataID": [
+      "string",
+      "null"
+     ],
+     "Status": [
+      "string",
+      "null"
+     ],
+     "TeamID": [
+      "integer",
+      "null"
+     ],
+     "Team": [
+      "string",
+      "null"
+     ],
+     "Jersey": [
+      "integer",
+      "null"
+     ],
+     "PositionCategory": [
+      "string",
+      "null"
+     ],
+     "Position": [
+      "string",
+      "null"
+     ],
+     "MLBAMID": [
+      "integer",
+      "null"
+     ],
+     "FirstName": [
+      "string",
+      "null"
+     ],
+     "LastName": [
+      "string",
+      "null"
+     ],
+     "BatHand": [
+      "string",
+      "null"
+     ],
+     "ThrowHand": [
+      "string",
+      "null"
+     ],
+     "Height": [
+      "integer",
+      "null"
+     ],
+     "Weight": [
+      "integer",
+      "null"
+     ],
+     "BirthDate": [
+      "string",
+      "null"
+     ],
+     "BirthCity": [
+      "string",
+      "null"
+     ],
+     "BirthState": [
+      "string",
+      "null"
+     ],
+     "BirthCountry": [
+      "string",
+      "null"
+     ],
+     "HighSchool": [
+      "string",
+      "null"
+     ],
+     "College": [
+      "string",
+      "null"
+     ],
+     "ProDebut": [
+      "string",
+      "null"
+     ],
+     "Salary": [
+      "integer",
+      "null"
+     ],
+     "PhotoUrl": [
+      "string",
+      "null"
+     ],
+     "SportRadarPlayerID": [
+      "string",
+      "null"
+     ],
+     "RotoworldPlayerID": [
+      "integer",
+      "null"
+     ],
+     "RotoWirePlayerID": [
+      "integer",
+      "null"
+     ],
+     "FantasyAlarmPlayerID": [
+      "integer",
+      "null"
+     ],
+     "StatsPlayerID": [
+      "integer",
+      "null"
+     ],
+     "SportsDirectPlayerID": [
+      "integer",
+      "null"
+     ],
+     "XmlTeamPlayerID": [
+      "integer",
+      "null"
+     ],
+     "InjuryStatus": [
+      "string",
+      "null"
+     ],
+     "InjuryBodyPart": [
+      "string",
+      "null"
+     ],
+     "InjuryStartDate": [
+      "string",
+      "null"
+     ],
+     "InjuryNotes": [
+      "string",
+      "null"
+     ],
+     "FanDuelPlayerID": [
+      "integer",
+      "null"
+     ],
+     "DraftKingsPlayerID": [
+      "integer",
+      "null"
+     ],
+     "YahooPlayerID": [
+      "integer",
+      "null"
+     ],
+     "UpcomingGameID": [
+      "integer",
+      "null"
+     ],
+     "FanDuelName": [
+      "string",
+      "null"
+     ],
+     "DraftKingsName": [
+      "string",
+      "null"
+     ],
+     "YahooName": [
+      "string",
+      "null"
+     ],
+     "GlobalTeamID": [
+      "integer",
+      "null"
+     ],
+     "FantasyDraftName": [
+      "string",
+      "null"
+     ],
+     "FantasyDraftPlayerID": [
+      "integer",
+      "null"
+     ],
+     "Experience": [
+      "string",
+      "null"
+     ],
+     "UsaTodayPlayerID": [
+      "integer",
+      "null"
+     ],
+     "UsaTodayHeadshotUrl": [
+      "string",
+      "null"
+     ],
+     "UsaTodayHeadshotNoBackgroundUrl": [
+      "string",
+      "null"
+     ],
+     "UsaTodayHeadshotUpdated": [
+      "string",
+      "null"
+     ],
+     "UsaTodayHeadshotNoBackgroundUpdated": [
+      "string",
+      "null"
+     ],
+     "DepthChartPosition": [
+      "string",
+      "null"
+     ],
+     "DepthChartOrder": [
+      "integer",
+      "null"
+     ],
+     "NbaDotComPlayerID": [
+      "integer",
+      "null"
+     ],
+     "Number": [
+      "integer",
+      "null"
+     ],
+     "FantasyPosition": [
+      "string",
+      "null"
+     ],
+     "Active": [
+      "boolean",
+      "null"
+     ],
+     "Name": [
+      "string",
+      "null"
+     ],
+     "Age": [
+      "integer",
+      "null"
+     ],
+     "ExperienceString": [
+      "string",
+      "null"
+     ],
+     "BirthDateString": [
+      "string",
+      "null"
+     ],
+     "ByeWeek": [
+      "integer",
+      "null"
+     ],
+     "UpcomingGameOpponent": [
+      "string",
+      "null"
+     ],
+     "UpcomingGameWeek": "integer",
+     "ShortName": [
+      "string",
+      "null"
+     ],
+     "AverageDraftPosition": [
+      "number",
+      "null"
+     ],
+     "DepthPositionCategory": [
+      "string",
+      "null"
+     ],
+     "DepthPosition": [
+      "string",
+      "null"
+     ],
+     "DepthOrder": [
+      "integer",
+      "null"
+     ],
+     "DepthDisplayOrder": [
+      "integer",
+      "null"
+     ],
+     "CurrentTeam": [
+      "string",
+      "null"
+     ],
+     "CollegeDraftTeam": [
+      "string",
+      "null"
+     ],
+     "CollegeDraftYear": [
+      "integer",
+      "null"
+     ],
+     "CollegeDraftRound": [
+      "integer",
+      "null"
+     ],
+     "CollegeDraftPick": [
+      "integer",
+      "null"
+     ],
+     "IsUndraftedFreeAgent": "boolean",
+     "HeightFeet": [
+      "integer",
+      "null"
+     ],
+     "HeightInches": [
+      "integer",
+      "null"
+     ],
+     "UpcomingOpponentRank": [
+      "integer",
+      "null"
+     ],
+     "UpcomingOpponentPositionRank": [
+      "integer",
+      "null"
+     ],
+     "CurrentStatus": [
+      "string",
+      "null"
+     ],
+     "UpcomingSalary": [
+      "integer",
+      "null"
+     ],
+     "FantasyPositionDepthOrder": [
+      "integer",
+      "null"
+     ],
+     "InjuryPractice": [
+      "string",
+      "null"
+     ],
+     "InjuryPracticeDescription": [
+      "string",
+      "null"
+     ],
+     "DeclaredInactive": "boolean",
+     "UpcomingFanDuelSalary": [
+      "integer",
+      "null"
+     ],
+     "UpcomingDraftKingsSalary": [
+      "integer",
+      "null"
+     ],
+     "UpcomingYahooSalary": [
+      "integer",
+      "null"
+     ],
+     "PlayerSeason": "object",
+     "LatestNews": "array",
+     "Catches": [
+      "string",
+      "null"
+     ],
+     "Shoots": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/Players",
+     "openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/Players/{team}",
+     "openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/Players",
+     "openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/Players/{team}",
+     "openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Players",
+     "openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Players/{team}",
+     "openapi/_original/sportsdataio-nhl-openapi.yml#GET /v3/nhl/scores/{format}/Players",
+     "openapi/_original/sportsdataio-nhl-openapi.yml#GET /v3/nhl/scores/{format}/Players/{team}"
+    ]
+   },
+   "sportsgameodds": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "playerId": "string",
+     "name": "string",
+     "team": "string",
+     "position": "string",
+     "league": "string"
+    },
+    "evidence": [
+     "openapi/_original/sportsgameodds-openapi.yml#GET /players/",
+     "openapi/_original/sportsgameodds-openapi.yml#GET /players/{playerId}"
+    ]
+   },
+   "statorium": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "position": "string",
+     "teamId": "integer",
+     "jerseyNumber": "integer",
+     "college": "string",
+     "experience": "integer",
+     "status": "string",
+     "nationality": "string",
+     "height": "string",
+     "weight": "string",
+     "nameTranslated": "string",
+     "dateOfBirth": "string",
+     "shirtNumber": "integer"
+    },
+    "evidence": [
+     "openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/players/{playerId}/",
+     "openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/players/{playerId}/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /players/{playerId}/"
+    ]
+   },
+   "stats-perform": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "playerId": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "position": "string",
+     "teamId": "string",
+     "jerseyNumber": "string",
+     "birthDate": "string",
+     "birthCity": "string",
+     "birthCountry": "string"
+    },
+    "evidence": [
+     "openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/players/{playerId}"
+    ]
+   },
+   "strava": {
+    "segments": [
+     "athlete"
+    ],
+    "operations": [
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "username": "string",
+     "firstname": "string",
+     "lastname": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "sex": "string",
+     "premium": "boolean",
+     "summit": "boolean",
+     "created_at": "string",
+     "updated_at": "string",
+     "follower_count": "integer",
+     "friend_count": "integer",
+     "measurement_preference": "string",
+     "weight": "number",
+     "profile_medium": "string",
+     "profile": "string",
+     "bikes": "array",
+     "shoes": "array"
+    },
+    "evidence": [
+     "openapi/_original/strava-openapi.yml#GET /athlete",
+     "openapi/_original/strava-openapi.yml#PUT /athlete"
+    ]
+   },
+   "therundown": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "sport_id": "integer",
+     "team_id": "integer",
+     "updated_at": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "display_name": "string",
+     "weight": "number",
+     "height": "number",
+     "display_weight": "string",
+     "display_height": "string",
+     "age": "integer",
+     "date_of_birth": "string",
+     "slug": "string",
+     "jersey": "string",
+     "position": "string",
+     "position_abbreviation": "string",
+     "debut_year": "integer",
+     "birth_place_city": "string",
+     "birth_place_country": "string",
+     "experience_years": "integer",
+     "active": "boolean",
+     "status": "string",
+     "bats": "string",
+     "throws": "string"
+    },
+    "evidence": [
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/players/{playerID}",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/teams/{teamID}/players"
+    ]
+   },
+   "videoverse": {
+    "segments": [
+     "player"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "category": "string",
+     "metadata": "object",
+     "playerName": "string",
+     "metaData": "object"
+    },
+    "evidence": [
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/player",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/player/{playerId}",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/player",
+     "openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/player/{playerId}"
+    ]
+   },
+   "wager-api": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "player_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "full_name": "string",
+     "position": "string",
+     "team_id": "string",
+     "team_name": "string",
+     "sport": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/wager-api-openapi.yml#GET /v1/players"
+    ]
+   }
+  },
+  "game": {
+   "5dollarfootballapi": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "success": "integer",
+     "data": null,
+     "pagination": "object"
+    },
+    "evidence": [
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /fixtures",
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /fixtures/{id}",
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues/{id}/fixtures",
+     "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /teams/{id}/fixtures"
+    ]
+   },
+   "betgenius": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "CompetitionId": "integer",
+     "CompetitionName": "string",
+     "CustomerFixtureId": "string",
+     "Date": "string",
+     "FixtureId": "integer",
+     "IsBooked": "boolean",
+     "Name": "string",
+     "SportId": "integer",
+     "AvailableFeeds": "array",
+     "ExternalIds": "array",
+     "id": "integer",
+     "name": "string",
+     "phase": "string",
+     "bookingStatus": "string",
+     "startAt": "string",
+     "competitionId": "string",
+     "competitionName": "string",
+     "sportId": "integer",
+     "sportName": "string",
+     "liveStreams": "array",
+     "vodStreams": "array"
+    },
+    "evidence": [
+     "openapi/_original/betgenius-booking-v1-openapi-original.json#GET /api/booking/Fixtures",
+     "openapi/_original/betgenius-booking-v1-openapi.yml#GET /api/booking/Fixtures",
+     "openapi/_original/betgenius-booking-v2-openapi-original.json#GET /api/v2/booking/Fixtures",
+     "openapi/_original/betgenius-booking-v2-openapi.yml#GET /api/v2/booking/Fixtures",
+     "openapi/_original/betgenius-video-v3-openapi-original.json#GET /fixtures",
+     "openapi/_original/betgenius-video-v3-openapi-original.json#GET /fixtures/{id}",
+     "openapi/_original/betgenius-video-v3-openapi.yml#GET /fixtures",
+     "openapi/_original/betgenius-video-v3-openapi.yml#GET /fixtures/{id}"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "matches",
+     "games",
+     "match"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "url": "string",
+     "pgn": "string",
+     "time_control": "string",
+     "end_time": "integer",
+     "rated": "boolean",
+     "fen": "string",
+     "time_class": "string",
+     "rules": "string",
+     "white": "object",
+     "black": "object"
+    },
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /club/{url-ID}/matches",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /match/{ID}",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/games",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/matches"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "matches",
+     "schedule",
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "total_pages": "integer",
+     "has_next": "boolean",
+     "has_prev": "boolean",
+     "id": "string",
+     "tournament_id": null,
+     "tournament": null,
+     "match_date": "string",
+     "tour": null,
+     "surface": "string",
+     "round": "string",
+     "best_of": "integer",
+     "score": "string",
+     "outcome": "string",
+     "status": null,
+     "duration_minutes": null,
+     "winner_id": null,
+     "loser_id": null,
+     "winner_sets_won": null,
+     "loser_sets_won": null,
+     "scheduled_at": null,
+     "tournament_name": null,
+     "round_name": null,
+     "winner": null,
+     "loser": null,
+     "player1": null,
+     "player2": null,
+     "winner_side": null,
+     "sets": "array",
+     "stats": null
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/matches/{id}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/games/{gameId}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams/{teamIdOrSlug}/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/tournaments/{eventIdOrSlug}/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /dota2/matches/{matchId}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/matches",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/matches/{matchId}"
+    ]
+   },
+   "cricapi": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "matchType": "string",
+     "score": "array",
+     "status": "string",
+     "venue": "string",
+     "date": "string",
+     "dateTimeGMT": "string",
+     "teams": "array",
+     "series_id": "string",
+     "fantasyEnabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/cricapi-cricket-data-api-openapi.yml#GET /matches"
+    ]
+   },
+   "dream-sports": {
+    "segments": [
+     "schedule"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "data": "object",
+     "statusCode": "integer"
+    },
+    "evidence": [
+     "openapi/_original/dream-sports-raven-journey-openapi.yml#PUT /thunder/ctas/{id}/schedule",
+     "openapi/_original/dream-sports-thunder-admin-openapi.yml#PUT /thunder/ctas/{id}/schedule"
+    ]
+   },
+   "entitysport": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/entitysport-openapi.yml#GET /competitions/{cid}/matches",
+     "openapi/_original/entitysport-openapi.yml#GET /matches"
+    ]
+   },
+   "genius-sports": {
+    "segments": [
+     "fixtures",
+     "matches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "pageSize": "integer",
+     "totalItems": "integer",
+     "items": "array",
+     "self": "string",
+     "previous": "string",
+     "next": "string",
+     "first": "string",
+     "last": "string",
+     "id": "integer",
+     "createdOn": "string",
+     "modifiedOn": "string",
+     "updatesCount": "integer",
+     "metadataProperties": "array",
+     "externalIds": "object",
+     "startDate": "string",
+     "name": "string",
+     "season": "object",
+     "eventStatusType": "string",
+     "locality": "object",
+     "timezone": "object",
+     "venue": "object",
+     "sport": "object",
+     "competition": "object",
+     "round": "object",
+     "homeCompetitor": "object",
+     "genderType": "string",
+     "ageCategory": "string",
+     "competitors": "array",
+     "fixtureLink": "object",
+     "eventType": "string",
+     "matchDay": "integer",
+     "attendance": "integer",
+     "seasonId": "integer",
+     "homeCompetitorId": "integer",
+     "roundId": "integer",
+     "venueId": "integer",
+     "localityId": "integer",
+     "EventStatusType": "integer",
+     "organization": null,
+     "fixture": null,
+     "competitionPhase": null,
+     "officials": "array",
+     "sourceCoverage": "object",
+     "coverage": "array",
+     "sourceEntityId": "string",
+     "sourceMetadata": "object",
+     "competitorType": "string",
+     "playerPropertiesModel": null,
+     "doublesPropertiesModel": "object",
+     "teamPropertiesModel": "object",
+     "gender": "string",
+     "isHome": "boolean",
+     "lineup": "object",
+     "preserveLineup": "boolean",
+     "meta": "object",
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /fixtures/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /fixtures",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /fixtures/{id}",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /fixtures",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /ingestion/fixtures",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /fixtures",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /ingestion/fixtures",
+     "openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /fixtures",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/matches",
+     "openapi/_original/genius-sports-openapi.yml#GET /v1/matches/{matchId}"
+    ]
+   },
+   "highlightly": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "date": "string",
+     "league": "object",
+     "homeTeam": "object",
+     "awayTeam": "object",
+     "state": "object"
+    },
+    "evidence": [
+     "openapi/_original/highlightly-openapi.yml#GET /football/matches",
+     "openapi/_original/highlightly-openapi.yml#GET /football/matches/{id}"
+    ]
+   },
+   "livelike": {
+    "segments": [
+     "schedule"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "publish_delay": "string",
+     "program_date_time": "string"
+    },
+    "evidence": [
+     "openapi/_original/livelike-engagement-suite-openapi.yml#PUT /{widget-collection-kind}/{widget-id}/schedule/"
+    ]
+   },
+   "lucra-sports": {
+    "segments": [
+     "scores"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "score": "object",
+     "userId": "string",
+     "phoneNumber": "string",
+     "userMetadata": "object",
+     "metadata": "object",
+     "attemptFinished": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/lucra-sports-forge-openapi.json#POST /api/recreational-games/scores",
+     "openapi/_original/lucra-sports-forge-openapi.json#POST /api/tournaments/scores"
+    ]
+   },
+   "major-league-baseball": {
+    "segments": [
+     "schedule",
+     "game",
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "copyright": "string",
+     "gamePk": "string",
+     "updatedAt": "string",
+     "auditUpdatedAt": "string",
+     "metricsUpdatedAt": "string",
+     "videoUpdatedAt": "string",
+     "link": "string"
+    },
+    "evidence": [
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/analytics/game",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/jobs/umpires/games/{umpireId}",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/people/{personId}/stats/game/{gamePk}",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/schedule",
+     "openapi/_original/major-league-baseball-openapi.json#GET /api/v1/schedule/{scheduleType}"
+    ]
+   },
+   "oddsjam": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/oddsjam-openapi.yml#GET /fixtures"
+    ]
+   },
+   "opticodds": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "away_competitors": "array",
+     "away_record": "string",
+     "away_rotation_number": "integer",
+     "away_seed": "string",
+     "away_starter": "string",
+     "away_starter_id": "string",
+     "away_team_display": "string",
+     "broadcast": "string",
+     "extra": "object",
+     "game_id": "string",
+     "has_odds": "boolean",
+     "home_competitors": "array",
+     "home_record": "string",
+     "home_rotation_number": "integer",
+     "home_seed": "string",
+     "home_starter": "string",
+     "home_starter_id": "string",
+     "home_team_display": "string",
+     "id": "string",
+     "is_live": "boolean",
+     "league": "object",
+     "lineups": "object",
+     "numerical_id": "integer",
+     "result": "object",
+     "season_type": "string",
+     "season_week": "string",
+     "season_year": "string",
+     "source_ids": "object",
+     "sport": "object",
+     "start_date": "string",
+     "status": "string",
+     "tournament": "object",
+     "tournament_stage": "string",
+     "updated_at": "string",
+     "venue_location": "string",
+     "venue_name": "string",
+     "venue_neutral": "boolean",
+     "weather": null,
+     "weather_temp": null,
+     "data": "array"
+    },
+    "evidence": [
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /copilot/fixtures",
+     "openapi/_original/opticodds-api-v3-openapi.json#GET /fixtures",
+     "openapi/_original/opticodds-openapi.yml#GET /fixtures"
+    ]
+   },
+   "pandascore": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pandascore-openapi.yml#GET /csgo/matches",
+     "openapi/_original/pandascore-openapi.yml#GET /dota2/matches",
+     "openapi/_original/pandascore-openapi.yml#GET /lol/matches",
+     "openapi/_original/pandascore-openapi.yml#GET /matches",
+     "openapi/_original/pandascore-openapi.yml#GET /matches/{matchIdOrSlug}",
+     "openapi/_original/pandascore-openapi.yml#GET /valorant/matches"
+    ]
+   },
+   "parlay-api": {
+    "segments": [
+     "events",
+     "game",
+     "scores",
+     "games",
+     "matches"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/parlay-api-openapi-agent.json#GET /v1/sports/{sport_key}/events",
+     "openapi/_original/parlay-api-openapi.json#GET /live/api/game/{event_id}",
+     "openapi/_original/parlay-api-openapi.json#GET /live/api/games",
+     "openapi/_original/parlay-api-openapi.json#GET /live/game/{event_id}",
+     "openapi/_original/parlay-api-openapi.json#GET /v1/historical/sports/{sport_key}/matches",
+     "openapi/_original/parlay-api-openapi.json#GET /v1/sandbox/sports/{sport_key}/events",
+     "openapi/_original/parlay-api-openapi.json#GET /v1/sandbox/sports/{sport_key}/scores",
+     "openapi/_original/parlay-api-openapi.json#GET /v1/sports/{sport_key}/events",
+     "openapi/_original/parlay-api-openapi.json#GET /v1/sports/{sport_key}/scores"
+    ]
+   },
+   "riot-games": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "metadata": "object",
+     "info": "object"
+    },
+    "evidence": [
+     "openapi/_original/riot-games-league-of-legends-openapi.yml#GET /lol/match/v5/matches/{matchId}"
+    ]
+   },
+   "skipodds": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "source": "string",
+     "attribution": "string",
+     "generated_at": "string",
+     "requests_remaining_today": "integer",
+     "tier": "string",
+     "competition": "string",
+     "fixtures": "array",
+     "fixture": "object"
+    },
+    "evidence": [
+     "openapi/_original/skipodds-openapi.json#GET /v1/fixtures",
+     "openapi/_original/skipodds-openapi.json#GET /v1/fixtures/{id}",
+     "openapi/_original/skipodds-openapi.json#GET /v1/{sport}/fixtures",
+     "openapi/_original/skipodds-openapi.json#GET /v1/{sport}/fixtures/{id}",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/fixtures",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/fixtures/{id}",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/{sport}/fixtures",
+     "openapi/_original/skipodds-openapi.yml#GET /v1/{sport}/fixtures/{id}"
+    ]
+   },
+   "splitgate": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "matchId": "string",
+     "status": "string",
+     "updatedAt": "string",
+     "startedAt": "string",
+     "endedAt": "string",
+     "matchTypeSlug": "string",
+     "gameModeSlug": "string",
+     "playlistSlug": "string",
+     "mapSlug": "string",
+     "teams": "array"
+    },
+    "evidence": [
+     "openapi/_original/splitgate-third-party-openapi-original.yml#GET /v1/game/splitgate2/matches/{matchId}"
+    ]
+   },
+   "sportmonks": {
+    "segments": [
+     "fixtures"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "sport_id": "integer",
+     "league_id": "integer",
+     "season_id": "integer",
+     "stage_id": "integer",
+     "round_id": "integer",
+     "state_id": "integer",
+     "venue_id": "integer",
+     "name": "string",
+     "starting_at": "string",
+     "result_info": "string",
+     "leg": "string",
+     "details": "string",
+     "length": "integer",
+     "placeholder": "boolean",
+     "has_odds": "boolean",
+     "has_premium_odds": "boolean",
+     "starting_at_timestamp": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sportmonks-football-openapi.yml#GET /fixtures",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /fixtures/{id}",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /odds/inplay/fixtures/{fixtureId}",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /odds/pre-match/fixtures/{fixtureId}",
+     "openapi/_original/sportmonks-football-openapi.yml#GET /predictions/probabilities/fixtures/{fixtureId}"
+    ]
+   },
+   "statorium": {
+    "segments": [
+     "games",
+     "matches"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "homeTeam": "object",
+     "awayTeam": "object",
+     "homeScore": "integer",
+     "awayScore": "integer",
+     "status": "string",
+     "gameDate": "string",
+     "week": "integer",
+     "season": "integer",
+     "quarter": "string",
+     "timeRemaining": "string",
+     "quarterScores": "array",
+     "playerStats": "array",
+     "matchDate": "string",
+     "leagueId": "integer",
+     "seasonId": "integer",
+     "minute": "integer",
+     "homeLineup": "array",
+     "awayLineup": "array",
+     "events": "array",
+     "statistics": "object",
+     "headToHead": "array"
+    },
+    "evidence": [
+     "openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/games/",
+     "openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/games/{gameId}/",
+     "openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/games/",
+     "openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/games/{gameId}/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /matches/",
+     "openapi/_original/statorium-football-api-openapi.yml#GET /matches/{matchId}/"
+    ]
+   },
+   "stats-perform": {
+    "segments": [
+     "scores"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "eventId": "string",
+     "startDateTime": "string",
+     "status": "string",
+     "homeTeam": "object",
+     "awayTeam": "object",
+     "homeScore": "integer",
+     "awayScore": "integer",
+     "periods": "array"
+    },
+    "evidence": [
+     "openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/scores/",
+     "openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/scores/{eventId}"
+    ]
+   },
+   "the-odds-api": {
+    "segments": [
+     "events",
+     "scores"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "sport_key": "string",
+     "sport_title": "string",
+     "commence_time": "string",
+     "completed": "boolean",
+     "home_team": "string",
+     "away_team": "string",
+     "scores": "array",
+     "last_update": "string"
+    },
+    "evidence": [
+     "openapi/_original/the-odds-api-openapi.yml#GET /v4/historical/sports/{sport}/events",
+     "openapi/_original/the-odds-api-openapi.yml#GET /v4/sports/{sport}/events",
+     "openapi/_original/the-odds-api-openapi.yml#GET /v4/sports/{sport}/scores"
+    ]
+   },
+   "therundown": {
+    "segments": [
+     "events",
+     "schedule"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "event_id": "string",
+     "event_uuid": "string",
+     "sport_id": "integer",
+     "event_date": "string",
+     "rotation_number_away": "integer",
+     "rotation_number_home": "integer",
+     "score": "object",
+     "teams": "array",
+     "schedule": "object",
+     "pitcher_away": "object",
+     "pitcher_home": "object",
+     "markets": "array",
+     "season_type": "string",
+     "season_year": "integer",
+     "away_team": "string",
+     "home_team": "string",
+     "date_event": "string",
+     "neutral_site": "boolean",
+     "conference_competition": "boolean",
+     "conference_id": "integer",
+     "conference_name": "string",
+     "league_name": "string",
+     "league_id": "integer",
+     "event_name": "string",
+     "broadcast": "string",
+     "event_location": "string",
+     "attendance": "integer",
+     "status": "string",
+     "status_detail": "string",
+     "away_score": "integer",
+     "home_score": "integer",
+     "teams_normalized": "array",
+     "lines": "object",
+     "line_periods": "object"
+    },
+    "evidence": [
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v1/sports/{sportID}/events/{date}",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v1/sports/{sportID}/schedule",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v1/sports/{sportID}/widget/events",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/sports/events/{date}",
+     "openapi/_original/therundown-sports-odds-api-openapi.yml#GET /api/v2/sports/{sportID}/events/{date}"
+    ]
+   },
+   "toornament": {
+    "segments": [
+     "matches"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "tournament_id": "string",
+     "stage_id": "string",
+     "round_id": "string",
+     "group_id": "string",
+     "number": "integer",
+     "status": "string",
+     "scheduled_datetime": "string",
+     "played_at": "string",
+     "opponents": "array",
+     "result": "string",
+     "score": "integer",
+     "forfeit": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/toornament-openapi.yml#GET /tournaments/{tournament_id}/stages/{stage_id}/matches",
+     "openapi/_original/toornament-openapi.yml#PATCH /tournaments/{tournament_id}/matches/{match_id}"
+    ]
+   },
+   "wager-api": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "game_id": "string",
+     "sport": "string",
+     "league": "string",
+     "home_team_id": "string",
+     "home_team_name": "string",
+     "away_team_id": "string",
+     "away_team_name": "string",
+     "game_date": "string",
+     "venue": "string",
+     "status": "string",
+     "home_score": "integer",
+     "away_score": "integer"
+    },
+    "evidence": [
+     "openapi/_original/wager-api-openapi.yml#GET /v1/games"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "5dollarfootballapi",
+    "agl",
+    "ballranks",
+    "betfair",
+    "betgenius",
+    "chess-com",
+    "citoapi",
+    "cricapi",
+    "crob-at",
+    "discgolfapi",
+    "dream-sports",
+    "endeavor",
+    "entitysport",
+    "genius-sports",
+    "goalserve",
+    "gracenote",
+    "highlightly",
+    "inthegame",
+    "keyper",
+    "livelike",
+    "lucra-sports",
+    "major-league-baseball",
+    "national-hockey-league",
+    "new-york-times-company",
+    "odds-api",
+    "oddsjam",
+    "oddsrelay",
+    "openf1",
+    "opticodds",
+    "pandascore",
+    "parlay-api",
+    "polar",
+    "race-entry",
+    "riot-games",
+    "runsignup",
+    "seatgeek",
+    "sharpapi",
+    "skipodds",
+    "splitgate",
+    "sponsorunited",
+    "sportmonks",
+    "sportradar",
+    "sportsbook-api",
+    "sportsdataio",
+    "sportsdb",
+    "sportsgameodds",
+    "statorium",
+    "stats-perform",
+    "strava",
+    "the-odds-api",
+    "the-picklr",
+    "the-racing-api",
+    "therundown",
+    "thesports",
+    "ticketmaster",
+    "toornament",
+    "tribune-media",
+    "under-armour",
+    "usenarrative",
+    "videoverse",
+    "wager-api",
+    "weatherapi",
+    "wsc-sports"
+   ],
+   "kebab-case": [
+    "betgenius",
+    "chess-com",
+    "citoapi",
+    "crob-at",
+    "dream-sports",
+    "endeavor",
+    "genius-sports",
+    "gracenote",
+    "highlightly",
+    "livelike",
+    "lucra-sports",
+    "national-hockey-league",
+    "new-york-times-company",
+    "odds-api",
+    "oddsjam",
+    "opticodds",
+    "parlay-api",
+    "polar",
+    "race-entry",
+    "riot-games",
+    "runsignup",
+    "sponsorunited",
+    "sportmonks",
+    "sportradar",
+    "sportsbook-api",
+    "sportsdataio",
+    "the-racing-api",
+    "therundown",
+    "toornament",
+    "tribune-media",
+    "usenarrative",
+    "videoverse",
+    "wager-api"
+   ],
+   "snake_case": [
+    "cricapi",
+    "dream-sports",
+    "endeavor",
+    "inthegame",
+    "livelike",
+    "openf1",
+    "parlay-api",
+    "polar",
+    "race-entry",
+    "sharpapi",
+    "sportradar",
+    "strava",
+    "the-picklr",
+    "therundown",
+    "under-armour"
+   ],
+   "camelCase": [
+    "agl",
+    "betfair",
+    "cricapi",
+    "dream-sports",
+    "genius-sports",
+    "gracenote",
+    "inthegame",
+    "major-league-baseball",
+    "sponsorunited",
+    "stats-perform",
+    "therundown",
+    "tribune-media",
+    "videoverse"
+   ],
+   "other": [
+    "citoapi",
+    "dream-sports",
+    "endeavor",
+    "inthegame",
+    "livelike",
+    "parlay-api",
+    "sportsdb",
+    "thesportsdb",
+    "weatherapi"
+   ],
+   "PascalCase": [
+    "betfair",
+    "betgenius",
+    "sportradar",
+    "sportsdataio"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "5dollarfootballapi",
+    "agl",
+    "ballranks",
+    "betgenius",
+    "citoapi",
+    "cricapi",
+    "discgolfapi",
+    "dream-sports",
+    "endeavor",
+    "entitysport",
+    "genius-sports",
+    "goalserve",
+    "gracenote",
+    "highlightly",
+    "inthegame",
+    "keyper",
+    "livelike",
+    "lucra-sports",
+    "major-league-baseball",
+    "new-york-times-company",
+    "odds-api",
+    "oddsrelay",
+    "openf1",
+    "opticodds",
+    "pandascore",
+    "parlay-api",
+    "polar",
+    "riot-games",
+    "runsignup",
+    "seatgeek",
+    "sharpapi",
+    "skipodds",
+    "splitgate",
+    "sponsorunited",
+    "sportmonks",
+    "sportradar",
+    "sportsbook-api",
+    "sportsdataio",
+    "sportsdb",
+    "sportsgameodds",
+    "statorium",
+    "stats-perform",
+    "strava",
+    "the-odds-api",
+    "the-picklr",
+    "the-racing-api",
+    "therundown",
+    "thesports",
+    "thesportsdb",
+    "ticketmaster",
+    "toornament",
+    "tribune-media",
+    "under-armour",
+    "usenarrative",
+    "videoverse",
+    "wager-api",
+    "weatherapi"
+   ],
+   "snake_case": [
+    "5dollarfootballapi",
+    "ballranks",
+    "citoapi",
+    "dream-sports",
+    "endeavor",
+    "entitysport",
+    "gracenote",
+    "livelike",
+    "new-york-times-company",
+    "odds-api",
+    "openf1",
+    "opticodds",
+    "pandascore",
+    "parlay-api",
+    "polar",
+    "runsignup",
+    "seatgeek",
+    "sharpapi",
+    "sponsorunited",
+    "sportradar",
+    "stats-perform",
+    "strava",
+    "the-picklr",
+    "the-racing-api",
+    "therundown",
+    "thesports",
+    "toornament",
+    "tribune-media",
+    "under-armour",
+    "usenarrative",
+    "wager-api",
+    "weatherapi"
+   ],
+   "camelCase": [
+    "agl",
+    "betfair",
+    "betgenius",
+    "citoapi",
+    "dream-sports",
+    "genius-sports",
+    "gracenote",
+    "highlightly",
+    "inthegame",
+    "keyper",
+    "lucra-sports",
+    "major-league-baseball",
+    "new-york-times-company",
+    "oddsrelay",
+    "parlay-api",
+    "polar",
+    "sponsorunited",
+    "sportsbook-api",
+    "sportsgameodds",
+    "statorium",
+    "the-odds-api",
+    "ticketmaster",
+    "tribune-media",
+    "videoverse"
+   ],
+   "other": [
+    "major-league-baseball",
+    "seatgeek",
+    "sponsorunited",
+    "the-picklr",
+    "wsc-sports"
+   ],
+   "kebab-case": [
+    "inthegame",
+    "new-york-times-company",
+    "the-picklr"
+   ],
+   "PascalCase": [
+    "sponsorunited",
+    "wsc-sports"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "ballranks",
+    "betgenius",
+    "citoapi",
+    "discgolfapi",
+    "genius-sports",
+    "gracenote",
+    "highlightly",
+    "lucra-sports",
+    "major-league-baseball",
+    "new-york-times-company",
+    "odds-api",
+    "oddsrelay",
+    "opticodds",
+    "parlay-api",
+    "sharpapi",
+    "skipodds",
+    "splitgate",
+    "sportsgameodds",
+    "the-racing-api",
+    "therundown",
+    "tribune-media",
+    "under-armour",
+    "usenarrative"
+   ],
+   "page": [
+    "5dollarfootballapi",
+    "citoapi",
+    "dream-sports",
+    "endeavor",
+    "genius-sports",
+    "livelike",
+    "new-york-times-company",
+    "opticodds",
+    "pandascore",
+    "riot-games",
+    "runsignup",
+    "seatgeek",
+    "sponsorunited",
+    "sportmonks",
+    "strava",
+    "the-picklr",
+    "ticketmaster",
+    "videoverse"
+   ],
+   "offset": [
+    "ballranks",
+    "citoapi",
+    "cricapi",
+    "discgolfapi",
+    "endeavor",
+    "genius-sports",
+    "gracenote",
+    "highlightly",
+    "lucra-sports",
+    "major-league-baseball",
+    "new-york-times-company",
+    "parlay-api",
+    "sharpapi",
+    "sponsorunited",
+    "the-picklr",
+    "therundown",
+    "tribune-media",
+    "under-armour"
+   ],
+   "per_page": [
+    "5dollarfootballapi",
+    "endeavor",
+    "entitysport",
+    "inthegame",
+    "pandascore",
+    "seatgeek",
+    "sponsorunited",
+    "strava",
+    "the-picklr"
+   ],
+   "page_size": [
+    "citoapi",
+    "dream-sports",
+    "genius-sports",
+    "livelike",
+    "videoverse",
+    "wsc-sports"
+   ],
+   "count": [
+    "keyper",
+    "major-league-baseball",
+    "riot-games",
+    "sponsorunited",
+    "statorium",
+    "stats-perform"
+   ],
+   "before": [
+    "betgenius",
+    "citoapi",
+    "endeavor",
+    "strava",
+    "the-picklr"
+   ],
+   "after": [
+    "betgenius",
+    "citoapi",
+    "endeavor",
+    "strava",
+    "the-picklr"
+   ],
+   "cursor": [
+    "odds-api",
+    "oddsrelay",
+    "opticodds",
+    "sharpapi",
+    "usenarrative"
+   ],
+   "size": [
+    "citoapi",
+    "gracenote",
+    "ticketmaster"
+   ],
+   "page_token": [
+    "dream-sports"
+   ],
+   "start": [
+    "riot-games"
+   ],
+   "skip": [
+    "the-racing-api"
+   ]
+  },
+  "property": {
+   "lower": [
+    "5dollarfootballapi",
+    "betgenius",
+    "chess-com",
+    "citoapi",
+    "cricapi",
+    "crob-at",
+    "dream-sports",
+    "entitysport",
+    "genius-sports",
+    "highlightly",
+    "lucra-sports",
+    "major-league-baseball",
+    "odds-api",
+    "opticodds",
+    "polar",
+    "riot-games",
+    "runsignup",
+    "sharpapi",
+    "skipodds",
+    "splitgate",
+    "sponsorunited",
+    "sportmonks",
+    "sportsgameodds",
+    "statorium",
+    "stats-perform",
+    "strava",
+    "the-odds-api",
+    "therundown",
+    "toornament",
+    "videoverse",
+    "wager-api"
+   ],
+   "snake_case": [
+    "chess-com",
+    "citoapi",
+    "cricapi",
+    "crob-at",
+    "livelike",
+    "opticodds",
+    "polar",
+    "runsignup",
+    "sharpapi",
+    "skipodds",
+    "sponsorunited",
+    "sportmonks",
+    "strava",
+    "the-odds-api",
+    "therundown",
+    "toornament",
+    "wager-api"
+   ],
+   "camelCase": [
+    "betgenius",
+    "cricapi",
+    "dream-sports",
+    "genius-sports",
+    "highlightly",
+    "lucra-sports",
+    "major-league-baseball",
+    "splitgate",
+    "sponsorunited",
+    "sportsgameodds",
+    "statorium",
+    "stats-perform",
+    "videoverse"
+   ],
+   "PascalCase": [
+    "betgenius",
+    "genius-sports",
+    "sportsdataio"
+   ],
+   "other": [
+    "chess-com"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "5dollarfootballapi",
+    "ballranks",
+    "betgenius",
+    "chess-com",
+    "citoapi",
+    "crob-at",
+    "discgolfapi",
+    "dream-sports",
+    "endeavor",
+    "entitysport",
+    "genius-sports",
+    "goalserve",
+    "highlightly",
+    "inthegame",
+    "livelike",
+    "lucra-sports",
+    "major-league-baseball",
+    "national-hockey-league",
+    "new-york-times-company",
+    "oddsjam",
+    "oddsrelay",
+    "parlay-api",
+    "polar",
+    "riot-games",
+    "sharpapi",
+    "skipodds",
+    "sponsorunited",
+    "sportmonks",
+    "sportradar",
+    "sportsdataio",
+    "stats-perform",
+    "strava",
+    "the-odds-api",
+    "the-picklr",
+    "therundown",
+    "ticketmaster",
+    "toornament",
+    "under-armour"
+   ],
+   "camelCase": [
+    "betgenius",
+    "citoapi",
+    "crob-at",
+    "dream-sports",
+    "genius-sports",
+    "gracenote",
+    "highlightly",
+    "inthegame",
+    "livelike",
+    "lucra-sports",
+    "major-league-baseball",
+    "pandascore",
+    "polar",
+    "riot-games",
+    "sharpapi",
+    "splitgate",
+    "sponsorunited",
+    "sportmonks",
+    "sportsbook-api",
+    "sportsdataio",
+    "sportsdb",
+    "sportsgameodds",
+    "statorium",
+    "stats-perform",
+    "the-odds-api",
+    "therundown",
+    "ticketmaster",
+    "tribune-media",
+    "videoverse",
+    "wager-api"
+   ],
+   "snake_case": [
+    "citoapi",
+    "dream-sports",
+    "endeavor",
+    "goalserve",
+    "inthegame",
+    "livelike",
+    "major-league-baseball",
+    "new-york-times-company",
+    "odds-api",
+    "parlay-api",
+    "polar",
+    "runsignup",
+    "seatgeek",
+    "sponsorunited",
+    "sportradar",
+    "the-racing-api",
+    "toornament",
+    "usenarrative"
+   ],
+   "kebab-case": [
+    "chess-com",
+    "dream-sports",
+    "livelike",
+    "national-hockey-league",
+    "new-york-times-company",
+    "polar"
+   ],
+   "other": [
+    "chess-com",
+    "tribune-media"
+   ],
+   "PascalCase": [
+    "chess-com",
+    "livelike"
+   ]
+  }
+ }
+}

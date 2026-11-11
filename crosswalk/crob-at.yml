@@ -1,0 +1,14 @@
+provider: crob-at
+apis_io: https://apis.io/providers/crob-at/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - team
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/crob-at-openapi.json#GET /api/team/{slug}
+    - openapi/_original/crob-at-openapi.json#POST /api/team

@@ -1,0 +1,35 @@
+provider: oddsjam
+apis_io: https://apis.io/providers/oddsjam/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    - tournaments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/oddsjam-openapi.yml#GET /leagues
+    - openapi/_original/oddsjam-openapi.yml#GET /tournaments
+  team:
+    path_segment:
+    - teams
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/oddsjam-openapi.yml#GET /teams
+  player:
+    path_segment:
+    - players
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/oddsjam-openapi.yml#GET /players
+  game:
+    path_segment:
+    - fixtures
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/oddsjam-openapi.yml#GET /fixtures

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/sports/main/schema/game.json",
+  "title": "Game",
+  "description": "The common game in Sports Data, distilled from 23 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.522,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "game_id",
+        "sport_id",
+        "SportId",
+        "sportId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.478,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "start_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.348,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "date",
+        "Date",
+        "startAt",
+        "startDate",
+        "start_date",
+        "gameDate",
+        "commence_time",
+        "game_date"
+      ],
+      "format": "date-time"
+    },
+    "away_team": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.261,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "awayTeam",
+        "away_team",
+        "away_team_id"
+      ]
+    },
+    "home_team": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.261,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "homeTeam",
+        "home_team",
+        "home_team_id"
+      ]
+    },
+    "score": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "score"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "sports",
+    "concept": "game",
+    "providers": 23,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

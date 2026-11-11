@@ -1,0 +1,44 @@
+provider: sponsorunited
+apis_io: https://apis.io/providers/sponsorunited/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - league
+    - leagues
+    properties:
+      name: name
+      id:
+      - sport_id
+      - id
+      sport: sport
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/league/{league}
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league-items/league
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/league/{league}
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/spend-tracker/dollar-off-metrics/league
+  team:
+    path_segment:
+    - team
+    properties:
+      name: name
+      id:
+      - id
+      - uuid
+      - sport_id
+      city:
+      - market
+      - city
+      league: league
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/team/{id}
+    - openapi/_original/sponsorunited-api-openapi-original.json#DELETE /api/user/{user_id}/event/{event_id}/team/{team_id}
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/events/team/{team_id}
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/team
+    - openapi/_original/sponsorunited-api-openapi-original.json#GET /api/team/{id}

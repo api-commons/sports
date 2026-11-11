@@ -1,0 +1,60 @@
+context: sports
+name: Sports Data
+intro: >-
+  The common sports-data vocabulary -- leagues, the teams and players in them, and the games
+  (fixtures) they play with their scores -- distilled from the APIs that already exist.
+tags: [Sports, Sports Data, Sports Betting, Fantasy Sports, Football, Soccer, Basketball, Baseball, Esports, Odds]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, response, paging, parameters, get, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, sport_id]
+  created_at: [created, created_date, date_created]
+  updated_at: [updated, modified_at, last_modified, last_updated, updated_date]
+  status: [state, game_status, event_status]
+  name: [full_name, display_name, title]
+
+concepts:
+  league:
+    segments: [leagues, league, competitions, competition, tournaments, tournament, seasons@leagues|competitions]
+    aliases:
+      country: [country_code, area, region]
+  team:
+    segments: [teams, team, clubs, club, squads]
+    aliases:
+      abbreviation: [short_name, code, tla, abbr, team_code]
+      city: [location, market]
+      venue: [stadium, arena, home_venue]
+  player:
+    segments: [players, player, athletes, athlete, people@sports, rosters, squad]
+    aliases:
+      position: [pos, role]
+      jersey_number: [number, jersey, shirt_number, uniform_number]
+      birth_date: [date_of_birth, dob, birthdate]
+      first_name: [firstname]
+      last_name: [lastname, surname]
+  game:
+    segments: [games, game, matches, match, fixtures, fixture, events@sports|leagues|competitions, schedules, schedule, scores, results@sports]
+    aliases:
+      start_at: [date, start_time, scheduled, commence_time, kickoff, game_date, date_time, utc_date, start_date]
+      home_team: [home, home_team_id, team_home, hometeam]
+      away_team: [away, away_team_id, team_away, awayteam, visitor]
+      home_score: [score_home, home_points, home_team_score]
+      away_score: [score_away, away_points, away_team_score]
+      venue: [stadium, arena, location]
+
+findings:
+  - >-
+    Leagues, teams and players agree on id and name and on little else: team abbreviation reaches
+    33%, and player first_name, last_name and position each reach 47%.
+  - >-
+    Games agree only on id; status is at 48% and start_at 35%. Home and away teams appear under a
+    different name, nesting and score shape at nearly every provider -- the game is where sports
+    data providers differ most.
+decisions:
+  - >-
+    The market's word is kept per concept: league for competitions and tournaments, game for
+    matches, fixtures and events.
+  - >-
+    Odds and betting markets were left out of this pass; they are a sportsbook context of their own.

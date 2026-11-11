@@ -1,0 +1,12 @@
+provider: livelike
+apis_io: https://apis.io/providers/livelike/
+context: sports
+generated: '2026-11-11'
+concepts:
+  game:
+    path_segment:
+    - schedule
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/livelike-engagement-suite-openapi.yml#PUT /{widget-collection-kind}/{widget-id}/schedule/

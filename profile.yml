@@ -1,0 +1,639 @@
+context: sports
+name: Sports Data
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Sports
+  - Sports Data
+  - Sports Betting
+  - Fantasy Sports
+  - Football
+  - Soccer
+  - Basketball
+  - Baseball
+  - Esports
+  - Odds
+  providers_with_harvested_openapi: 64
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  league:
+    segments_seen:
+      leagues: 14
+      tournaments: 8
+      competitions: 4
+      tournament: 2
+      league: 2
+    providers_exposing: 21
+    providers_with_readable_schema: 17
+    operations:
+    - operation: GET collection
+      providers: 21
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 15
+      share: 0.714
+      tier: core
+    - operation: POST collection
+      providers: 6
+      share: 0.286
+      tier: extended
+    - operation: UPDATE item
+      providers: 4
+      share: 0.19
+      tier: long-tail
+    - operation: DELETE item
+      providers: 3
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 14
+      share: 0.824
+      type: string
+      spellings:
+      - name
+      - title
+      - Name
+      - full_name
+    - name: id
+      tier: core
+      providers: 13
+      share: 0.765
+      type: integer
+      spellings:
+      - id
+      - sport_id
+      - sportId
+      - leagueId
+    - name: country
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: string
+      spellings:
+      - country
+      - country_code
+      - region
+    - name: sport
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: object
+      spellings:
+      - sport
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.294
+      type: string
+      spellings:
+      - status
+    long_tail_count: 169
+    long_tail_sample:
+    - category
+    - end_date
+    - items
+    - start_date
+    - type
+    - active
+    - created_at
+    - description
+    - format
+    - gender
+    - logo_url
+    - metadata
+    - page_size
+    - season
+    - short_name
+    - tier
+    - timezone
+    - abbreviation
+    - age_category
+    - all_time_title_leader
+    - api
+    - archived
+    - area_id
+    - area_name
+    - assistants
+    - buy_in
+    - buy_in_amount
+    - city
+    - competition_id
+    - conferences_in_use
+    - contact
+    - copyright
+    - country_id
+    - created_on
+    - currency
+    - current_season_id
+    - discipline
+    - discord
+    - divisions
+    - divisions_in_use
+  team:
+    segments_seen:
+      teams: 19
+      team: 4
+      squads: 3
+      clubs: 2
+      club: 1
+    providers_exposing: 26
+    providers_with_readable_schema: 21
+    operations:
+    - operation: GET collection
+      providers: 22
+      share: 0.846
+      tier: core
+    - operation: GET item
+      providers: 20
+      share: 0.769
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.192
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.077
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 18
+      share: 0.857
+      type: string
+      spellings:
+      - name
+      - Name
+      - FullName
+    - name: id
+      tier: core
+      providers: 17
+      share: 0.81
+      type: integer
+      spellings:
+      - id
+      - team_id
+      - sport_id
+      - teamId
+      - '@id'
+      - sportId
+      - uuid
+      - TeamID
+    - name: abbreviation
+      tier: extended
+      providers: 7
+      share: 0.333
+      type: string
+      spellings:
+      - abbreviation
+      - teamCode
+      - shortName
+    - name: city
+      tier: extended
+      providers: 7
+      share: 0.333
+      type: string
+      spellings:
+      - city
+      - location
+      - market
+      - City
+    - name: conference
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - conference
+      - Conference
+    - name: division
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - division
+      - Division
+    - name: league
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: object
+      spellings:
+      - league
+      - League
+    - name: sport
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: object
+      spellings:
+      - sport
+    long_tail_count: 242
+    long_tail_sample:
+    - created_at
+    - players
+    - country
+    - description
+    - founded
+    - logo
+    - status
+    - type
+    - venue
+    - venue_id
+    - active
+    - email
+    - gender
+    - league_id
+    - logo_url
+    - mascot
+    - member_count
+    - placeholder
+    - record
+    - team_name
+    - updated_at
+    - url
+    - address
+    - admin
+    - age_category
+    - agencies
+    - alias
+    - aliases
+    - all_star_status
+    - area_id
+    - area_name
+    - attended_date
+    - author
+    - average_daily_rating
+    - average_draft_position
+    - average_draft_position2_qb
+    - average_draft_position_dynasty
+    - average_draft_position_ppr
+    - base_id
+    - birthplace
+  player:
+    segments_seen:
+      players: 18
+      player: 4
+      athletes: 1
+      athlete: 1
+    providers_exposing: 21
+    providers_with_readable_schema: 17
+    operations:
+    - operation: GET collection
+      providers: 17
+      share: 0.81
+      tier: core
+    - operation: GET item
+      providers: 13
+      share: 0.619
+      tier: core
+    - operation: POST collection
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.048
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.048
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 16
+      share: 0.941
+      type: integer
+      spellings:
+      - id
+      - playerId
+      - player_id
+      - sport_id
+      - '@id'
+      - sportId
+      - PlayerID
+    - name: name
+      tier: core
+      providers: 14
+      share: 0.824
+      type: string
+      spellings:
+      - name
+      - full_name
+      - display_name
+      - title
+      - displayName
+      - Name
+    - name: first_name
+      tier: extended
+      providers: 8
+      share: 0.471
+      type: string
+      spellings:
+      - first_name
+      - firstname
+      - FirstName
+      - firstName
+    - name: last_name
+      tier: extended
+      providers: 8
+      share: 0.471
+      type: string
+      spellings:
+      - last_name
+      - lastname
+      - LastName
+      - lastName
+    - name: position
+      tier: extended
+      providers: 8
+      share: 0.471
+      type: string
+      spellings:
+      - position
+      - Position
+    - name: status
+      tier: extended
+      providers: 7
+      share: 0.412
+      type: string
+      spellings:
+      - status
+      - Status
+      - state
+    - name: birth_date
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: string
+      spellings:
+      - date_of_birth
+      - dob
+      - BirthDate
+      - dateOfBirth
+      - birthDate
+    - name: jersey_number
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: integer
+      spellings:
+      - number
+      - jerseyNumber
+      - Jersey
+      - Number
+      - shirtNumber
+      - jersey
+    - name: weight
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: integer
+      spellings:
+      - weight
+      - Weight
+    - name: height
+      tier: extended
+      providers: 5
+      share: 0.294
+      type: integer
+      spellings:
+      - height
+      - Height
+    - name: team_id
+      tier: extended
+      providers: 5
+      share: 0.294
+      type: integer
+      spellings:
+      - teamId
+      - team_id
+      - TeamID
+    - name: age
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: integer
+      spellings:
+      - age
+      - Age
+    - name: country
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: string
+      spellings:
+      - country
+    long_tail_count: 181
+    long_tail_sample:
+    - experience
+    - sport
+    - team
+    - active
+    - birth_city
+    - birth_country
+    - college
+    - gender
+    - is_active
+    - items
+    - league
+    - nationality
+    - page_size
+    - slug
+    - updated_at
+    - username
+    - avatar
+    - average_draft_position
+    - backhand
+    - base_id
+    - bat_hand
+    - bats
+    - bikes
+    - birth_date_string
+    - birth_place_city
+    - birth_place_country
+    - birth_state
+    - bye_week
+    - career_high_date
+    - career_high_rank
+    - career_summary
+    - catches
+    - category
+    - city
+    - city_id
+    - club
+    - college_draft_pick
+    - college_draft_round
+    - college_draft_team
+    - college_draft_year
+  game:
+    segments_seen:
+      matches: 12
+      fixtures: 7
+      games: 6
+      schedule: 5
+      scores: 4
+      events: 3
+      game: 2
+      match: 1
+    providers_exposing: 26
+    providers_with_readable_schema: 23
+    operations:
+    - operation: GET collection
+      providers: 21
+      share: 0.808
+      tier: core
+    - operation: GET item
+      providers: 16
+      share: 0.615
+      tier: core
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.115
+      tier: long-tail
+    - operation: POST collection
+      providers: 2
+      share: 0.077
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.038
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 12
+      share: 0.522
+      type: integer
+      spellings:
+      - id
+      - game_id
+      - sport_id
+      - SportId
+      - sportId
+    - name: status
+      tier: extended
+      providers: 11
+      share: 0.478
+      type: string
+      spellings:
+      - status
+      - state
+    - name: start_at
+      tier: extended
+      providers: 8
+      share: 0.348
+      type: string
+      spellings:
+      - date
+      - Date
+      - startAt
+      - startDate
+      - start_date
+      - gameDate
+      - commence_time
+      - game_date
+    - name: away_team
+      tier: extended
+      providers: 6
+      share: 0.261
+      type: object
+      spellings:
+      - awayTeam
+      - away_team
+      - away_team_id
+    - name: home_team
+      tier: extended
+      providers: 6
+      share: 0.261
+      type: object
+      spellings:
+      - homeTeam
+      - home_team
+      - home_team_id
+    - name: score
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: object
+      spellings:
+      - score
+    long_tail_count: 217
+    long_tail_sample:
+    - away_score
+    - home_score
+    - name
+    - league
+    - league_id
+    - round_id
+    - season_id
+    - sport
+    - teams
+    - updated_at
+    - venue
+    - attendance
+    - broadcast
+    - competition
+    - event_id
+    - external_ids
+    - has_odds
+    - items
+    - match_date
+    - metadata
+    - page_size
+    - result
+    - round
+    - season
+    - season_type
+    - season_year
+    - stage_id
+    - tournament
+    - tournament_id
+    - venue_id
+    - age_category
+    - attempt_finished
+    - attribution
+    - audit_updated_at
+    - available_feeds
+    - away_competitors
+    - away_lineup
+    - away_record
+    - away_rotation_number
+    - away_seed

@@ -1,0 +1,69 @@
+provider: citoapi
+apis_io: https://apis.io/providers/citoapi/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - tournaments
+    - competitions
+    - leagues
+    properties:
+      name: name
+      id: id
+      country: country_code
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/tournaments
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/tournaments/{id}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/leagues
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}/tournaments
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/tournaments
+  team:
+    path_segment:
+    - teams
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/events/{eventIdOrSlug}/teams
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}/teams
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/rankings/teams
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/stats/teams
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams
+  player:
+    path_segment:
+    - players
+    - athletes
+    properties:
+      id: id
+      name:
+      - full_name
+      - name
+      first_name: first_name
+      last_name: last_name
+      birth_date: dob
+      age: age
+      country: country
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}
+  game:
+    path_segment:
+    - matches
+    - schedule
+    - games
+    properties:
+      id: id
+      status: status
+      score: score
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/matches
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/matches/{id}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}/matches
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/games/{gameId}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches

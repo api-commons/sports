@@ -1,0 +1,31 @@
+provider: wager-api
+apis_io: https://apis.io/providers/wager-api/
+context: sports
+generated: '2026-11-11'
+concepts:
+  player:
+    path_segment:
+    - players
+    properties:
+      id: player_id
+      name: full_name
+      first_name: first_name
+      last_name: last_name
+      position: position
+      status: status
+      team_id: team_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/wager-api-openapi.yml#GET /v1/players
+  game:
+    path_segment:
+    - games
+    properties:
+      id: game_id
+      status: status
+      start_at: game_date
+      away_team: away_team_id
+      home_team: home_team_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/wager-api-openapi.yml#GET /v1/games

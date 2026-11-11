@@ -1,0 +1,44 @@
+provider: stats-perform
+apis_io: https://apis.io/providers/stats-perform/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id: teamId
+      abbreviation: abbreviation
+      city: city
+      conference: conference
+      division: division
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/teams/
+    - openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/teams/{teamId}
+  player:
+    path_segment:
+    - players
+    properties:
+      id: playerId
+      first_name: firstName
+      last_name: lastName
+      position: position
+      birth_date: birthDate
+      jersey_number: jerseyNumber
+      team_id: teamId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/players/{playerId}
+  game:
+    path_segment:
+    - scores
+    properties:
+      status: status
+      away_team: awayTeam
+      home_team: homeTeam
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/scores/
+    - openapi/_original/stats-perform-stats-api-openapi.yml#GET /stats/{sport}/{leaguePath}/scores/{eventId}

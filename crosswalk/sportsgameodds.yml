@@ -1,0 +1,39 @@
+provider: sportsgameodds
+apis_io: https://apis.io/providers/sportsgameodds/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    properties:
+      name: name
+      id: leagueId
+      country: country
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportsgameodds-openapi.yml#GET /leagues/
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id: teamId
+      abbreviation: abbreviation
+      league: league
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportsgameodds-openapi.yml#GET /teams/
+    - openapi/_original/sportsgameodds-openapi.yml#GET /teams/{teamId}
+  player:
+    path_segment:
+    - players
+    properties:
+      id: playerId
+      name: name
+      position: position
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportsgameodds-openapi.yml#GET /players/
+    - openapi/_original/sportsgameodds-openapi.yml#GET /players/{playerId}

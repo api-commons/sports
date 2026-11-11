@@ -1,0 +1,55 @@
+provider: chess-com
+apis_io: https://apis.io/providers/chess-com/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - tournaments
+    - tournament
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/tournaments
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /tournament/{url-ID}
+  team:
+    path_segment:
+    - clubs
+    - club
+    properties:
+      name: name
+      id: '@id'
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /club/{url-ID}
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/clubs
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/clubs
+  player:
+    path_segment:
+    - player
+    - players
+    properties:
+      id:
+      - '@id'
+      - player_id
+      name:
+      - title
+      - name
+      status: status
+      country: country
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/players
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}
+  game:
+    path_segment:
+    - matches
+    - games
+    - match
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /club/{url-ID}/matches
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /match/{ID}
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/games
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/matches

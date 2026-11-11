@@ -1,0 +1,232 @@
+openapi: 3.1.0
+info:
+  title: Sports Data (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Sports Data interface, distilled from the harvested OpenAPI of 64 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /leagues:
+    get:
+      operationId: listLeagues
+      summary: List leagues
+      tags:
+      - Leagues
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/League'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createLeague
+      summary: Create a league
+      tags:
+      - Leagues
+      x-commons-tier: extended
+      x-commons-share: 0.286
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /leagues/{league_id}:
+    parameters:
+    - $ref: '#/components/parameters/league_id'
+    get:
+      operationId: getLeague
+      summary: Get a league
+      tags:
+      - Leagues
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /teams:
+    get:
+      operationId: listTeams
+      summary: List teams
+      tags:
+      - Teams
+      x-commons-tier: core
+      x-commons-share: 0.846
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Team'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /teams/{team_id}:
+    parameters:
+    - $ref: '#/components/parameters/team_id'
+    get:
+      operationId: getTeam
+      summary: Get a team
+      tags:
+      - Teams
+      x-commons-tier: core
+      x-commons-share: 0.769
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /players:
+    get:
+      operationId: listPlayers
+      summary: List players
+      tags:
+      - Players
+      x-commons-tier: core
+      x-commons-share: 0.81
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Player'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /players/{player_id}:
+    parameters:
+    - $ref: '#/components/parameters/player_id'
+    get:
+      operationId: getPlayer
+      summary: Get a player
+      tags:
+      - Players
+      x-commons-tier: core
+      x-commons-share: 0.619
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /games:
+    get:
+      operationId: listGames
+      summary: List games
+      tags:
+      - Games
+      x-commons-tier: core
+      x-commons-share: 0.808
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Game'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /games/{game_id}:
+    parameters:
+    - $ref: '#/components/parameters/game_id'
+    get:
+      operationId: getGame
+      summary: Get a game
+      tags:
+      - Games
+      x-commons-tier: core
+      x-commons-share: 0.615
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+components:
+  schemas:
+    League:
+      $ref: ./schema/league.json
+    Team:
+      $ref: ./schema/team.json
+    Player:
+      $ref: ./schema/player.json
+    Game:
+      $ref: ./schema/game.json
+  parameters:
+    league_id:
+      name: league_id
+      in: path
+      required: true
+      schema:
+        type: string
+    team_id:
+      name: team_id
+      in: path
+      required: true
+      schema:
+        type: string
+    player_id:
+      name: player_id
+      in: path
+      required: true
+      schema:
+        type: string
+    game_id:
+      name: game_id
+      in: path
+      required: true
+      schema:
+        type: string

@@ -1,0 +1,41 @@
+provider: pandascore
+apis_io: https://apis.io/providers/pandascore/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    - tournaments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pandascore-openapi.yml#GET /leagues
+    - openapi/_original/pandascore-openapi.yml#GET /leagues/{leagueIdOrSlug}
+    - openapi/_original/pandascore-openapi.yml#GET /tournaments
+    - openapi/_original/pandascore-openapi.yml#GET /tournaments/{tournamentIdOrSlug}
+  team:
+    path_segment:
+    - teams
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pandascore-openapi.yml#GET /teams
+  player:
+    path_segment:
+    - players
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pandascore-openapi.yml#GET /players
+  game:
+    path_segment:
+    - matches
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pandascore-openapi.yml#GET /csgo/matches
+    - openapi/_original/pandascore-openapi.yml#GET /dota2/matches
+    - openapi/_original/pandascore-openapi.yml#GET /lol/matches
+    - openapi/_original/pandascore-openapi.yml#GET /matches
+    - openapi/_original/pandascore-openapi.yml#GET /matches/{matchIdOrSlug}

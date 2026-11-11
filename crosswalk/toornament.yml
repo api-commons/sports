@@ -1,0 +1,33 @@
+provider: toornament
+apis_io: https://apis.io/providers/toornament/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - tournaments
+    properties:
+      name:
+      - name
+      - full_name
+      id: id
+      country: country
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toornament-openapi.yml#DELETE /tournaments/{id}
+    - openapi/_original/toornament-openapi.yml#GET /tournaments
+    - openapi/_original/toornament-openapi.yml#GET /tournaments/{id}
+    - openapi/_original/toornament-openapi.yml#PATCH /tournaments/{id}
+    - openapi/_original/toornament-openapi.yml#POST /tournaments
+  game:
+    path_segment:
+    - matches
+    properties:
+      id: id
+      status: status
+      score: score
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toornament-openapi.yml#GET /tournaments/{tournament_id}/stages/{stage_id}/matches
+    - openapi/_original/toornament-openapi.yml#PATCH /tournaments/{tournament_id}/matches/{match_id}

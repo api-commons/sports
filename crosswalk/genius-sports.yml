@@ -1,0 +1,70 @@
+provider: genius-sports
+apis_io: https://apis.io/providers/genius-sports/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - competitions
+    - leagues
+    properties:
+      name: name
+      id:
+      - id
+      - sportId
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /competitions/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitions
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitions/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /competitions
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitions
+  team:
+    path_segment:
+    - teams
+    - squads
+    properties:
+      name: name
+      id:
+      - id
+      - sportId
+      abbreviation: abbreviation
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/teams
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/teams/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitors/teams
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /ingestion/squads
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /competitors/teams
+  player:
+    path_segment:
+    - players
+    - player
+    properties:
+      id:
+      - id
+      - sportId
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /contracts/team/{teamId}/player/{playerId}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/players
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /competitors/players/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#POST /competitors/players
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#PUT /competitors/players
+  game:
+    path_segment:
+    - fixtures
+    - matches
+    properties:
+      id: id
+      start_at: startDate
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#DELETE /fixtures/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /fixtures
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#GET /fixtures/{id}
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /fixtures
+    - openapi/_original/genius-sports-fixtures-v2-openapi.yml#PATCH /ingestion/fixtures

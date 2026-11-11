@@ -1,0 +1,249 @@
+context: sports
+generated: '2026-11-11'
+adopters:
+- provider: 5dollarfootballapi
+  apis_io: https://apis.io/providers/5dollarfootballapi/
+  crosswalk: crosswalk/5dollarfootballapi.yml
+  concepts:
+  - game
+  - league
+  - team
+- provider: betgenius
+  apis_io: https://apis.io/providers/betgenius/
+  crosswalk: crosswalk/betgenius.yml
+  concepts:
+  - game
+- provider: chess-com
+  apis_io: https://apis.io/providers/chess-com/
+  crosswalk: crosswalk/chess-com.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: citoapi
+  apis_io: https://apis.io/providers/citoapi/
+  crosswalk: crosswalk/citoapi.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: cricapi
+  apis_io: https://apis.io/providers/cricapi/
+  crosswalk: crosswalk/cricapi.yml
+  concepts:
+  - game
+  - player
+- provider: crob-at
+  apis_io: https://apis.io/providers/crob-at/
+  crosswalk: crosswalk/crob-at.yml
+  concepts:
+  - team
+- provider: dream-sports
+  apis_io: https://apis.io/providers/dream-sports/
+  crosswalk: crosswalk/dream-sports.yml
+  concepts:
+  - game
+  - team
+- provider: entitysport
+  apis_io: https://apis.io/providers/entitysport/
+  crosswalk: crosswalk/entitysport.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: genius-sports
+  apis_io: https://apis.io/providers/genius-sports/
+  crosswalk: crosswalk/genius-sports.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: goalserve
+  apis_io: https://apis.io/providers/goalserve/
+  crosswalk: crosswalk/goalserve.yml
+  concepts:
+  - player
+  - team
+- provider: gracenote
+  apis_io: https://apis.io/providers/gracenote/
+  crosswalk: crosswalk/gracenote.yml
+  concepts:
+  - team
+- provider: highlightly
+  apis_io: https://apis.io/providers/highlightly/
+  crosswalk: crosswalk/highlightly.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: livelike
+  apis_io: https://apis.io/providers/livelike/
+  crosswalk: crosswalk/livelike.yml
+  concepts:
+  - game
+- provider: lucra-sports
+  apis_io: https://apis.io/providers/lucra-sports/
+  crosswalk: crosswalk/lucra-sports.yml
+  concepts:
+  - game
+  - league
+- provider: major-league-baseball
+  apis_io: https://apis.io/providers/major-league-baseball/
+  crosswalk: crosswalk/major-league-baseball.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: odds-api
+  apis_io: https://apis.io/providers/odds-api/
+  crosswalk: crosswalk/odds-api.yml
+  concepts:
+  - league
+- provider: oddsjam
+  apis_io: https://apis.io/providers/oddsjam/
+  crosswalk: crosswalk/oddsjam.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: opticodds
+  apis_io: https://apis.io/providers/opticodds/
+  crosswalk: crosswalk/opticodds.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: pandascore
+  apis_io: https://apis.io/providers/pandascore/
+  crosswalk: crosswalk/pandascore.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: parlay-api
+  apis_io: https://apis.io/providers/parlay-api/
+  crosswalk: crosswalk/parlay-api.yml
+  concepts:
+  - game
+- provider: polar
+  apis_io: https://apis.io/providers/polar/
+  crosswalk: crosswalk/polar.yml
+  concepts:
+  - team
+- provider: riot-games
+  apis_io: https://apis.io/providers/riot-games/
+  crosswalk: crosswalk/riot-games.yml
+  concepts:
+  - game
+- provider: runsignup
+  apis_io: https://apis.io/providers/runsignup/
+  crosswalk: crosswalk/runsignup.yml
+  concepts:
+  - team
+- provider: sharpapi
+  apis_io: https://apis.io/providers/sharpapi/
+  crosswalk: crosswalk/sharpapi.yml
+  concepts:
+  - league
+  - team
+- provider: skipodds
+  apis_io: https://apis.io/providers/skipodds/
+  crosswalk: crosswalk/skipodds.yml
+  concepts:
+  - game
+  - league
+- provider: splitgate
+  apis_io: https://apis.io/providers/splitgate/
+  crosswalk: crosswalk/splitgate.yml
+  concepts:
+  - game
+  - player
+- provider: sponsorunited
+  apis_io: https://apis.io/providers/sponsorunited/
+  crosswalk: crosswalk/sponsorunited.yml
+  concepts:
+  - league
+  - team
+- provider: sportmonks
+  apis_io: https://apis.io/providers/sportmonks/
+  crosswalk: crosswalk/sportmonks.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: sportsdataio
+  apis_io: https://apis.io/providers/sportsdataio/
+  crosswalk: crosswalk/sportsdataio.yml
+  concepts:
+  - league
+  - player
+  - team
+- provider: sportsgameodds
+  apis_io: https://apis.io/providers/sportsgameodds/
+  crosswalk: crosswalk/sportsgameodds.yml
+  concepts:
+  - league
+  - player
+  - team
+- provider: statorium
+  apis_io: https://apis.io/providers/statorium/
+  crosswalk: crosswalk/statorium.yml
+  concepts:
+  - game
+  - league
+  - player
+  - team
+- provider: stats-perform
+  apis_io: https://apis.io/providers/stats-perform/
+  crosswalk: crosswalk/stats-perform.yml
+  concepts:
+  - game
+  - player
+  - team
+- provider: strava
+  apis_io: https://apis.io/providers/strava/
+  crosswalk: crosswalk/strava.yml
+  concepts:
+  - player
+  - team
+- provider: the-odds-api
+  apis_io: https://apis.io/providers/the-odds-api/
+  crosswalk: crosswalk/the-odds-api.yml
+  concepts:
+  - game
+- provider: therundown
+  apis_io: https://apis.io/providers/therundown/
+  crosswalk: crosswalk/therundown.yml
+  concepts:
+  - game
+  - player
+  - team
+- provider: toornament
+  apis_io: https://apis.io/providers/toornament/
+  crosswalk: crosswalk/toornament.yml
+  concepts:
+  - game
+  - league
+- provider: videoverse
+  apis_io: https://apis.io/providers/videoverse/
+  crosswalk: crosswalk/videoverse.yml
+  concepts:
+  - league
+  - player
+  - team
+- provider: wager-api
+  apis_io: https://apis.io/providers/wager-api/
+  crosswalk: crosswalk/wager-api.yml
+  concepts:
+  - game
+  - player

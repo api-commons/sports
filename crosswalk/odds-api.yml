@@ -1,0 +1,12 @@
+provider: odds-api
+apis_io: https://apis.io/providers/odds-api/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/odds-api-openapi.json#GET /leagues

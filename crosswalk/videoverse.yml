@@ -1,0 +1,41 @@
+provider: videoverse
+apis_io: https://apis.io/providers/videoverse/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - tournament
+    properties:
+      name: name
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/tournament
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/tournament/{tournamentId}
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/tournament
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/tournament/{tournamentId}
+  team:
+    path_segment:
+    - team
+    properties:
+      name: name
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/team
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/team/{teamId}
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/team
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/team/{teamId}
+  player:
+    path_segment:
+    - player
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/player
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#GET /v1/partner/player/{playerId}
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#POST /v1/partner/player
+    - openapi/_original/videoverse-magnifi-partner-openapi.yml#PUT /v1/partner/player/{playerId}

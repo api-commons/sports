@@ -1,0 +1,20 @@
+provider: dream-sports
+apis_io: https://apis.io/providers/dream-sports/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - squads
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dream-sports-checkmate-openapi.yml#GET /api/v1/project/squads
+  game:
+    path_segment:
+    - schedule
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dream-sports-raven-journey-openapi.yml#PUT /thunder/ctas/{id}/schedule
+    - openapi/_original/dream-sports-thunder-admin-openapi.yml#PUT /thunder/ctas/{id}/schedule

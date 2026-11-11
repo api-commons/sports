@@ -1,0 +1,62 @@
+provider: sportmonks
+apis_io: https://apis.io/providers/sportmonks/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    properties:
+      name: name
+      id:
+      - id
+      - sport_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportmonks-football-openapi.yml#GET /leagues
+    - openapi/_original/sportmonks-football-openapi.yml#GET /leagues/{id}
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id:
+      - id
+      - sport_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportmonks-football-openapi.yml#GET /teams
+    - openapi/_original/sportmonks-football-openapi.yml#GET /teams/{id}
+  player:
+    path_segment:
+    - players
+    properties:
+      id:
+      - id
+      - sport_id
+      name:
+      - name
+      - display_name
+      first_name: firstname
+      last_name: lastname
+      birth_date: date_of_birth
+      weight: weight
+      height: height
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportmonks-football-openapi.yml#GET /players
+    - openapi/_original/sportmonks-football-openapi.yml#GET /players/{id}
+  game:
+    path_segment:
+    - fixtures
+    properties:
+      id:
+      - id
+      - sport_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportmonks-football-openapi.yml#GET /fixtures
+    - openapi/_original/sportmonks-football-openapi.yml#GET /fixtures/{id}
+    - openapi/_original/sportmonks-football-openapi.yml#GET /odds/inplay/fixtures/{fixtureId}
+    - openapi/_original/sportmonks-football-openapi.yml#GET /odds/pre-match/fixtures/{fixtureId}
+    - openapi/_original/sportmonks-football-openapi.yml#GET /predictions/probabilities/fixtures/{fixtureId}

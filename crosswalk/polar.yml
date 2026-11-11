@@ -1,0 +1,15 @@
+provider: polar
+apis_io: https://apis.io/providers/polar/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/polar-teampro-api-openapi.yml#GET /v1/teams
+    - openapi/_original/polar-teampro-api-openapi.yml#GET /v1/teams/{team_id}

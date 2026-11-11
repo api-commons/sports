@@ -1,0 +1,30 @@
+provider: 5dollarfootballapi
+apis_io: https://apis.io/providers/5dollarfootballapi/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues/{id}
+  team:
+    path_segment:
+    - teams
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /teams/{id}
+  game:
+    path_segment:
+    - fixtures
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /fixtures
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /fixtures/{id}
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /leagues/{id}/fixtures
+    - openapi/_original/5dollarfootballapi-openapi-2026-08-19.json#GET /teams/{id}/fixtures

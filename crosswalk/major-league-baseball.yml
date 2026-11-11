@@ -1,0 +1,59 @@
+provider: major-league-baseball
+apis_io: https://apis.io/providers/major-league-baseball/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - league
+    - leagues
+    properties:
+      name: name
+      id: id
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/league
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/league/{leagueId}
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/leagues
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/leagues/{leagueId}
+    - openapi/_original/major-league-baseball-openapi.json#POST /api/v1/league
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id: id
+      abbreviation:
+      - teamCode
+      - abbreviation
+      - shortName
+      city: location
+      conference: conference
+      division: division
+      league: league
+      sport: sport
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/teams
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/teams/{teamId}
+  player:
+    path_segment:
+    - players
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/sports/{sportId}/players
+  game:
+    path_segment:
+    - schedule
+    - game
+    - games
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/analytics/game
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/jobs/umpires/games/{umpireId}
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/people/{personId}/stats/game/{gamePk}
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/schedule
+    - openapi/_original/major-league-baseball-openapi.json#GET /api/v1/schedule/{scheduleType}

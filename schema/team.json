@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/sports/main/schema/team.json",
+  "title": "Team",
+  "description": "The common team in Sports Data, distilled from 21 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.857,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "name",
+        "Name",
+        "FullName"
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.81,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "id",
+        "team_id",
+        "sport_id",
+        "teamId",
+        "@id",
+        "sportId",
+        "uuid",
+        "TeamID"
+      ]
+    },
+    "abbreviation": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "abbreviation",
+        "teamCode",
+        "shortName"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "city",
+        "location",
+        "market",
+        "City"
+      ]
+    },
+    "conference": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "conference",
+        "Conference"
+      ]
+    },
+    "division": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "division",
+        "Division"
+      ]
+    },
+    "league": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.238,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "league",
+        "League"
+      ]
+    },
+    "sport": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.238,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "sport"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "sports",
+    "concept": "team",
+    "providers": 21,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

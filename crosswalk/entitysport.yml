@@ -1,0 +1,40 @@
+provider: entitysport
+apis_io: https://apis.io/providers/entitysport/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - competitions
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/entitysport-openapi.yml#GET /competitions
+    - openapi/_original/entitysport-openapi.yml#GET /competitions/{cid}
+  team:
+    path_segment:
+    - squads
+    - teams
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/entitysport-openapi.yml#GET /matches/{mid}/squads
+    - openapi/_original/entitysport-openapi.yml#GET /teams/{tid}
+  player:
+    path_segment:
+    - players
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/entitysport-openapi.yml#GET /players/{pid}
+  game:
+    path_segment:
+    - matches
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/entitysport-openapi.yml#GET /competitions/{cid}/matches
+    - openapi/_original/entitysport-openapi.yml#GET /matches

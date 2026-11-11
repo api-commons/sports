@@ -1,0 +1,59 @@
+provider: sportsdataio
+apis_io: https://apis.io/providers/sportsdataio/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - competitions
+    properties:
+      name: Name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/sportsdataio-soccer-openapi.yml#GET /v4/soccer/scores/{format}/Competitions
+  team:
+    path_segment:
+    - teams
+    properties:
+      name:
+      - Name
+      - FullName
+      id:
+      - TeamID
+      - TeamId
+      city: City
+      conference: Conference
+      division: Division
+      league: League
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/teams
+    - openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/teams/{season}
+    - openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/teams
+    - openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/teams/{season}
+    - openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Teams
+  player:
+    path_segment:
+    - players
+    properties:
+      id: PlayerID
+      name: Name
+      first_name: FirstName
+      last_name: LastName
+      position: Position
+      status: Status
+      birth_date: BirthDate
+      jersey_number:
+      - Jersey
+      - Number
+      weight: Weight
+      height: Height
+      team_id: TeamID
+      age: Age
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/Players
+    - openapi/_original/sportsdataio-mlb-openapi.yml#GET /v3/mlb/scores/{format}/Players/{team}
+    - openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/Players
+    - openapi/_original/sportsdataio-nba-openapi.yml#GET /v3/nba/scores/{format}/Players/{team}
+    - openapi/_original/sportsdataio-nfl-openapi.yml#GET /v3/nfl/scores/{format}/Players

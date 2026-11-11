@@ -1,0 +1,71 @@
+provider: statorium
+apis_io: https://apis.io/providers/statorium/
+context: sports
+generated: '2026-11-11'
+concepts:
+  league:
+    path_segment:
+    - leagues
+    properties:
+      name: name
+      id: id
+      country: country
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/leagues/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /leagues/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /leagues/{leagueId}/
+  team:
+    path_segment:
+    - teams
+    properties:
+      name: name
+      id: id
+      abbreviation: abbreviation
+      city: city
+      conference: conference
+      division: division
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/teams/
+    - openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/teams/{teamId}/
+    - openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/teams/{teamId}/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /teams/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /teams/{teamId}/
+  player:
+    path_segment:
+    - players
+    properties:
+      id: id
+      name: name
+      position: position
+      status: status
+      birth_date: dateOfBirth
+      jersey_number:
+      - jerseyNumber
+      - shirtNumber
+      weight: weight
+      height: height
+      team_id: teamId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/players/{playerId}/
+    - openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/players/{playerId}/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /players/{playerId}/
+  game:
+    path_segment:
+    - games
+    - matches
+    properties:
+      id: id
+      status: status
+      start_at: gameDate
+      away_team: awayTeam
+      home_team: homeTeam
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/games/
+    - openapi/_original/statorium-american-football-api-openapi.yml#GET /nfl/games/{gameId}/
+    - openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/games/
+    - openapi/_original/statorium-basketball-api-openapi.yml#GET /basketball/games/{gameId}/
+    - openapi/_original/statorium-football-api-openapi.yml#GET /matches/

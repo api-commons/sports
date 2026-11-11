@@ -1,0 +1,12 @@
+provider: gracenote
+apis_io: https://apis.io/providers/gracenote/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - teams
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/gracenote-onconnect-lookup-apis-openapi.json#GET /v1.1/sports/teams/{teamBrandId}

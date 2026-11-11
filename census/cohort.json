@@ -1,0 +1,476 @@
+[
+ {
+  "slug": "5dollarfootballapi",
+  "specs": [
+   "openapi/_original/5dollarfootballapi-openapi-2026-08-19.json"
+  ]
+ },
+ {
+  "slug": "agl",
+  "specs": [
+   "openapi/_original/agl-open-openapi-original.yml",
+   "openapi/_original/agl-ota-openapi-original.yml",
+   "openapi/_original/agl-tripcom-outbound-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "ballranks",
+  "specs": [
+   "openapi/_original/ballranks-openapi.json"
+  ]
+ },
+ {
+  "slug": "betfair",
+  "specs": [
+   "openapi/_original/betfair-openapi.yml"
+  ]
+ },
+ {
+  "slug": "betgenius",
+  "specs": [
+   "openapi/_original/betgenius-booking-v1-openapi-original.json",
+   "openapi/_original/betgenius-booking-v1-openapi.yml",
+   "openapi/_original/betgenius-booking-v2-openapi-original.json",
+   "openapi/_original/betgenius-booking-v2-openapi.yml",
+   "openapi/_original/betgenius-video-v3-openapi-original.json",
+   "openapi/_original/betgenius-video-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chess-com",
+  "specs": [
+   "openapi/_original/chess-com-published-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "citoapi",
+  "specs": [
+   "openapi/_original/citoapi-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "cricapi",
+  "specs": [
+   "openapi/_original/cricapi-cricket-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crob-at",
+  "specs": [
+   "openapi/_original/crob-at-openapi.json"
+  ]
+ },
+ {
+  "slug": "discgolfapi",
+  "specs": [
+   "openapi/_original/discgolfapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dream-sports",
+  "specs": [
+   "openapi/_original/dream-sports-checkmate-openapi.yml",
+   "openapi/_original/dream-sports-delivr-ota-openapi.yml",
+   "openapi/_original/dream-sports-dota-openapi.yml",
+   "openapi/_original/dream-sports-guardian-integrations-openapi.yml",
+   "openapi/_original/dream-sports-guardian-openapi.yml",
+   "openapi/_original/dream-sports-raven-journey-openapi.yml",
+   "openapi/_original/dream-sports-thunder-admin-openapi.yml",
+   "openapi/_original/dream-sports-thunder-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "endeavor",
+  "specs": [
+   "openapi/_original/endeavor-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "entitysport",
+  "specs": [
+   "openapi/_original/entitysport-openapi.yml"
+  ]
+ },
+ {
+  "slug": "genius-sports",
+  "specs": [
+   "openapi/_original/genius-sports-fixtures-v2-openapi.yml",
+   "openapi/_original/genius-sports-matching-v2-openapi.yml",
+   "openapi/_original/genius-sports-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goalserve",
+  "specs": [
+   "openapi/_original/goalserve-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gracenote",
+  "specs": [
+   "openapi/_original/gracenote-gmd-api-v2-openapi.json",
+   "openapi/_original/gracenote-gmd-api-v3-openapi.json",
+   "openapi/_original/gracenote-onconnect-lookup-apis-openapi.json",
+   "openapi/_original/gracenote-online-video-social-apis-openapi.json",
+   "openapi/_original/gracenote-openapi.yml"
+  ]
+ },
+ {
+  "slug": "highlightly",
+  "specs": [
+   "openapi/_original/highlightly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "inthegame",
+  "specs": [
+   "openapi/_original/inthegame-openapi.yml"
+  ]
+ },
+ {
+  "slug": "keyper",
+  "specs": [
+   "openapi/_original/keyper-access-openapi.yml"
+  ]
+ },
+ {
+  "slug": "livelike",
+  "specs": [
+   "openapi/_original/livelike-analytics-api-readme-slices.json",
+   "openapi/_original/livelike-applications-openapi.yml",
+   "openapi/_original/livelike-applications-readme-slices.json",
+   "openapi/_original/livelike-base-url-openapi.yml",
+   "openapi/_original/livelike-base-url-readme-slices.json",
+   "openapi/_original/livelike-chat-room-invitations-openapi.yml",
+   "openapi/_original/livelike-chat-room-invitations-readme-slices.json",
+   "openapi/_original/livelike-chat-room-memberships-readme-slices.json",
+   "openapi/_original/livelike-chat-rooms-openapi.yml",
+   "openapi/_original/livelike-chat-rooms-readme-slices.json",
+   "openapi/_original/livelike-comment-board-bans-readme-slices.json",
+   "openapi/_original/livelike-comment-reports-openapi.yml",
+   "openapi/_original/livelike-comment-reports-readme-slices.json",
+   "openapi/_original/livelike-engagement-suite-openapi.yml",
+   "openapi/_original/livelike-engagement-suite-readme-slices.json",
+   "openapi/_original/livelike-football-live-action-openapi.yml",
+   "openapi/_original/livelike-football-live-action-readme-slices.json",
+   "openapi/_original/livelike-football-live-match-actions-openapi.yml",
+   "openapi/_original/livelike-football-live-match-actions-readme-slices.json",
+   "openapi/_original/livelike-image-predictions-openapi.yml",
+   "openapi/_original/livelike-image-predictions-readme-slices.json",
+   "openapi/_original/livelike-leaderboard-views-openapi.yml",
+   "openapi/_original/livelike-leaderboard-views-readme-slices.json",
+   "openapi/_original/livelike-leaderboards-openapi.yml",
+   "openapi/_original/livelike-leaderboards-readme-slices.json",
+   "openapi/_original/livelike-list-scopes-readme-slices.json",
+   "openapi/_original/livelike-match-insights-alerts-openapi.yml",
+   "openapi/_original/livelike-match-insights-alerts-readme-slices.json",
+   "openapi/_original/livelike-new-application-openapi.yml",
+   "openapi/_original/livelike-new-application-readme-slices.json",
+   "openapi/_original/livelike-profiles-openapi.yml",
+   "openapi/_original/livelike-profiles-readme-slices.json",
+   "openapi/_original/livelike-programs-openapi.yml",
+   "openapi/_original/livelike-programs-readme-slices.json",
+   "openapi/_original/livelike-reaction-packs-openapi.yml",
+   "openapi/_original/livelike-reaction-packs-readme-slices.json",
+   "openapi/_original/livelike-reaction-spaces-openapi.yml",
+   "openapi/_original/livelike-reaction-spaces-readme-slices.json",
+   "openapi/_original/livelike-sticker-packs-readme-slices.json",
+   "openapi/_original/livelike-text-ask-openapi.yml",
+   "openapi/_original/livelike-text-ask-readme-slices.json",
+   "openapi/_original/livelike-text-prediction-openapi.yml",
+   "openapi/_original/livelike-text-prediction-readme-slices.json",
+   "openapi/_original/livelike-wildmoka-video-alerts-openapi.yml",
+   "openapi/_original/livelike-wildmoka-video-alerts-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "lucra-sports",
+  "specs": [
+   "openapi/_original/lucra-sports-forge-openapi.json"
+  ]
+ },
+ {
+  "slug": "major-league-baseball",
+  "specs": [
+   "openapi/_original/major-league-baseball-openapi.json"
+  ]
+ },
+ {
+  "slug": "national-hockey-league",
+  "specs": [
+   "openapi/_original/national-hockey-league-openapi.yml"
+  ]
+ },
+ {
+  "slug": "new-york-times-company",
+  "specs": [
+   "openapi/_original/archive-api-openapi.yml",
+   "openapi/_original/article-search-v2-openapi.yml",
+   "openapi/_original/books-api-openapi.yml",
+   "openapi/_original/community-api-v3-openapi.yml",
+   "openapi/_original/geo-api-v2-openapi.yml",
+   "openapi/_original/most-popular-api-v2-openapi.yml",
+   "openapi/_original/movie-reviews-v2-openapi.yml",
+   "openapi/_original/semantic-api-openapi.yml",
+   "openapi/_original/times-tags-v3-openapi.yml",
+   "openapi/_original/timeswire-v3-openapi.yml",
+   "openapi/_original/top-stories-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "odds-api",
+  "specs": [
+   "openapi/_original/odds-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "oddsjam",
+  "specs": [
+   "openapi/_original/oddsjam-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oddsrelay",
+  "specs": [
+   "openapi/_original/oddsrelay-openapi.json",
+   "openapi/_original/oddsrelay-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openf1",
+  "specs": [
+   "openapi/_original/openf1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opticodds",
+  "specs": [
+   "openapi/_original/opticodds-api-v3-openapi.json",
+   "openapi/_original/opticodds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pandascore",
+  "specs": [
+   "openapi/_original/pandascore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "parlay-api",
+  "specs": [
+   "openapi/_original/parlay-api-openapi-agent.json",
+   "openapi/_original/parlay-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "polar",
+  "specs": [
+   "openapi/_original/polar-accesslink-api-openapi.yml",
+   "openapi/_original/polar-teampro-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "race-entry",
+  "specs": [
+   "openapi/_original/race-entry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "riot-games",
+  "specs": [
+   "openapi/_original/riot-games-league-of-legends-openapi.yml"
+  ]
+ },
+ {
+  "slug": "runsignup",
+  "specs": [
+   "openapi/_original/runsignup-openapi.yml"
+  ]
+ },
+ {
+  "slug": "seatgeek",
+  "specs": [
+   "openapi/_original/seatgeek-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sharpapi",
+  "specs": [
+   "openapi/_original/sharpapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "skipodds",
+  "specs": [
+   "openapi/_original/skipodds-openapi.json",
+   "openapi/_original/skipodds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "splitgate",
+  "specs": [
+   "openapi/_original/splitgate-third-party-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sponsorunited",
+  "specs": [
+   "openapi/_original/sponsorunited-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sportmonks",
+  "specs": [
+   "openapi/_original/sportmonks-football-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sportradar",
+  "specs": [
+   "openapi/_original/sportradar-push-feeds-openapi.yml",
+   "openapi/_original/sportradar-sports-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sportsbook-api",
+  "specs": [
+   "openapi/_original/sportsbook-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sportsdataio",
+  "specs": [
+   "openapi/_original/sportsdataio-mlb-openapi.yml",
+   "openapi/_original/sportsdataio-nba-openapi.yml",
+   "openapi/_original/sportsdataio-nfl-openapi.yml",
+   "openapi/_original/sportsdataio-nhl-openapi.yml",
+   "openapi/_original/sportsdataio-soccer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sportsdb",
+  "specs": [
+   "openapi/_original/sportsdb-openapi.yml",
+   "openapi/_original/thesportsdb-lists-api-openapi.yml",
+   "openapi/_original/thesportsdb-seasons-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sportsgameodds",
+  "specs": [
+   "openapi/_original/sportsgameodds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "statorium",
+  "specs": [
+   "openapi/_original/statorium-american-football-api-openapi.yml",
+   "openapi/_original/statorium-basketball-api-openapi.yml",
+   "openapi/_original/statorium-football-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stats-perform",
+  "specs": [
+   "openapi/_original/stats-perform-stats-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "strava",
+  "specs": [
+   "openapi/_original/strava-openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-odds-api",
+  "specs": [
+   "openapi/_original/the-odds-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-picklr",
+  "specs": [
+   "openapi/_original/the-picklr-wordpress-rest-openapi.json"
+  ]
+ },
+ {
+  "slug": "the-racing-api",
+  "specs": [
+   "openapi/_original/the-racing-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "therundown",
+  "specs": [
+   "openapi/_original/therundown-sports-odds-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thesports",
+  "specs": [
+   "openapi/_original/thesports-football-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thesportsdb",
+  "specs": [
+   "openapi/_original/thesportsdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ticketmaster",
+  "specs": [
+   "openapi/_original/ticketmaster-commerce-openapi.yml",
+   "openapi/_original/ticketmaster-discovery-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toornament",
+  "specs": [
+   "openapi/_original/toornament-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tribune-media",
+  "specs": [
+   "openapi/_original/tms-onconnect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "under-armour",
+  "specs": [
+   "openapi/_original/mapmyfitness-openapi.yml"
+  ]
+ },
+ {
+  "slug": "usenarrative",
+  "specs": [
+   "openapi/_original/usenarrative-sports-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "videoverse",
+  "specs": [
+   "openapi/_original/videoverse-magnifi-partner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wager-api",
+  "specs": [
+   "openapi/_original/wager-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weatherapi",
+  "specs": [
+   "openapi/_original/weatherapi-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "wsc-sports",
+  "specs": [
+   "openapi/_original/wsc-sports-blaze-feed-api-reference.json",
+   "openapi/_original/wsc-sports-blaze-feed-api.json"
+  ]
+ }
+]

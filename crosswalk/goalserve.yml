@@ -1,0 +1,19 @@
+provider: goalserve
+apis_io: https://apis.io/providers/goalserve/
+context: sports
+generated: '2026-11-11'
+concepts:
+  team:
+    path_segment:
+    - team
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/goalserve-openapi.yml#GET /{key}/soccerstats/team/{team_id}
+  player:
+    path_segment:
+    - player
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/goalserve-openapi.yml#GET /{key}/soccerstats/player/{player_id}

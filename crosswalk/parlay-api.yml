@@ -1,0 +1,20 @@
+provider: parlay-api
+apis_io: https://apis.io/providers/parlay-api/
+context: sports
+generated: '2026-11-11'
+concepts:
+  game:
+    path_segment:
+    - events
+    - game
+    - scores
+    - games
+    - matches
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/parlay-api-openapi-agent.json#GET /v1/sports/{sport_key}/events
+    - openapi/_original/parlay-api-openapi.json#GET /live/api/game/{event_id}
+    - openapi/_original/parlay-api-openapi.json#GET /live/api/games
+    - openapi/_original/parlay-api-openapi.json#GET /live/game/{event_id}
+    - openapi/_original/parlay-api-openapi.json#GET /v1/historical/sports/{sport_key}/matches
